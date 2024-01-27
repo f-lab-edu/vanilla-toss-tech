@@ -1,0 +1,30 @@
+{
+  "name": "vanilla-toss-tech",
+  "version": "1.0.0",
+  "description": "Vanilla Javascript SPA를 이용한 토스 테크 클론 코딩",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-lab-edu/vanilla-toss-tech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f-lab-edu/vanilla-toss-tech/issues"
+  },
+  "homepage": "https://github.com/f-lab-edu/vanilla-toss-tech#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.2.4"
+  }
+}
