@@ -29,5 +29,4 @@ const start = () => {
   router.start();
 };
 
-// TODO data 준비 되면 화면 띄우기
 document.addEventListener('DOMContentLoaded', start);
