@@ -59,7 +59,6 @@ export default class Router extends Component {
    * @returns component
    */
   navigate() {
-    console.log('실행');
     const { pathname } = window.location;
     if (this.$state.currentPath === pathname) return;
     const currentRoute = this.$state.routes.find((route) => {
