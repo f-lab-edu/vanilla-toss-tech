@@ -41,10 +41,9 @@ export default class Router extends Component {
    * @param {*} params
    * @returns
    */
-  static getUrlParams(route, hash) {
+  static getUrlParams(route, path) {
     const params = {};
-    const matches = hash.match(route.fragmentRegExp);
-
+    const matches = path.match(route.fragmentRegExp);
     matches.shift();
     matches.forEach((paramValue, index) => {
       const paramName = route.params[index];
