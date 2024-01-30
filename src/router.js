@@ -60,6 +60,7 @@ export default class Router extends Component {
   navigate() {
     const { pathname } = window.location;
     if (this.$state.currentPath === pathname) return;
+
     const currentRoute = this.$state.routes.find((route) => {
       const { fragmentRegExp } = route;
       return fragmentRegExp.test(pathname);
