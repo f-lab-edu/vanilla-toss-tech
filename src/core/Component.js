@@ -16,12 +16,16 @@ export default class Component {
   /**
    * 컴포넌트 state 설정
    */
-  setup() {}
+  setup() {
+    // 추상화를 위한 메서드
+  }
 
   /**
    * 컴포넌트가 마운트 되었을 때의 설정
    */
-  mounted() {}
+  mounted() {
+    // 추상화를 위한 메서드
+  }
 
   /**
    * UI
@@ -42,7 +46,9 @@ export default class Component {
   /**
    * 컴포넌트에서 필요한 이벤트 설정
    */
-  setEvent() {}
+  setEvent() {
+    // 추상화를 위한 메서드
+  }
 
   /**
    * 상태 변경 후 렌더링
