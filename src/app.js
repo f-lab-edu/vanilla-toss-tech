@@ -28,8 +28,8 @@ const createRouter = (container) => {
 
 const start = () => {
   const container = document.querySelector('#app');
-  // eslint-disable-next-line no-new
-  new Layout(container);
+  const layout = new Layout(container);
+  layout.render();
   createRouter(container).start();
 };
 

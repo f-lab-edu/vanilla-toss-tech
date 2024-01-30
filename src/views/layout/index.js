@@ -1,14 +1,6 @@
 import Component from '../../core/Component.js';
 
 export default class Layout extends Component {
-  constructor(target) {
-    super(target);
-    // 기존 node를 아래 template의 node로 교체
-    this.$newElement = target.cloneNode(true);
-    this.$newElement.innerHTML = this.template();
-    target.replaceWith(this.$newElement);
-  }
-
   template() {
     return `
     <nav >
