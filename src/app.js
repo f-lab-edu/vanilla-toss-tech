@@ -15,18 +15,22 @@ const createPages = (container) => {
   };
 };
 
-const start = () => {
-  const container = document.querySelector('#app');
-  // eslint-disable-next-line no-new
-  new Layout(container);
-  const router = new Router(container);
+const createRouter = (container) => {
   const pages = createPages(container);
+  const router = new Router(container);
   router.addRoute('/', pages.main);
   router.addRoute('/tech', pages.main);
   router.addRoute('/design', pages.main);
   router.addRoute('/article/:id', pages.article);
   router.setNotFound(pages.notFound);
-  router.start();
+  return router;
+};
+
+const start = () => {
+  const container = document.querySelector('#app');
+  // eslint-disable-next-line no-new
+  new Layout(container);
+  createRouter(container).start();
 };
 
 document.addEventListener('DOMContentLoaded', start);
