@@ -9,6 +9,8 @@
     "sourceType": "module"
   },
   "rules": {
-    "import/extensions": ["error", "ignorePackages"]
+    "import/extensions": ["error", "ignorePackages"],
+    "class-methods-use-this": "off",
+    "no-new": "off"
   }
 }
