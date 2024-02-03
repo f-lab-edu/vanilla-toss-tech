@@ -29,7 +29,7 @@ export default class Header extends Component {
   }
 
   setEvent() {
-    this.addEvent('click', 'button', () => {
+    this.addEvent('click', 'navbar__button', () => {
       this.goRecruit();
     });
   }
