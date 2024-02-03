@@ -1,0 +1,24 @@
+.home__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.home__main {
+  max-width: 1140px;
+  height: 100%;
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 192px;
+}
+
+.home__title {
+  width: 100%;
+  background-color: var(--white);
+  display: inline-block;
+  padding: 20px 0;
+  margin: 52px 0 32px 0;
+  font-weight: 700;
+  font-size: var(--font-size-h3);
+  color: var(--grey800);
+}
