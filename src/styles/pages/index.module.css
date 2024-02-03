@@ -11,14 +11,3 @@
   margin: 0 auto;
   margin-bottom: 192px;
 }
-
-.home__title {
-  width: 100%;
-  background-color: var(--white);
-  display: inline-block;
-  padding: 20px 0;
-  margin: 52px 0 32px 0;
-  font-weight: 700;
-  font-size: var(--font-size-h3);
-  color: var(--grey800);
-}

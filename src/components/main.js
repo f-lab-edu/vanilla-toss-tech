@@ -2,8 +2,13 @@ import Component from '../core/Component.js';
 import style from '../styles/components/main.module.css';
 
 export default class Main extends Component {
+  constructor() {
+    super(document.querySelector('main'));
+  }
+
   template() {
     return `
+      <span class="${style.main__subject}">개발</span>
       <ul class="${style.main__list}">
         <li class="${style.main__item}">
           <a class="${style.main__container}">
