@@ -9,8 +9,13 @@
     "sourceType": "module"
   },
   "rules": {
-    "import/extensions": ["error", "ignorePackages"],
     "class-methods-use-this": "off",
     "no-new": "off"
-  }
+  },
+  "import/no-unresolved": [
+    "error",
+    {
+      "caseSensitive": false
+    }
+  ]
 }

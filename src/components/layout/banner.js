@@ -1,5 +1,5 @@
-import Component from '../../core/Component.js';
-import style from '../../styles/components/layout/banner.module.css';
+import Component from '@/core/Component.js';
+import style from '@/styles/components/layout/banner.module.css';
 
 export default class Banner extends Component {
   template() {

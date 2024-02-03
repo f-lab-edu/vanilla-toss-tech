@@ -1,5 +1,5 @@
-import Component from '../core/Component.js';
-import styles from '../styles/pages/article.module.css';
+import Component from '@/core/Component.js';
+import styles from '@/styles/pages/article.module.css';
 
 export default class Article extends Component {
   constructor() {

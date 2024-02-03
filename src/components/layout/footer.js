@@ -1,5 +1,5 @@
-import Component from '../../core/Component.js';
-import style from '../../styles/components/layout/footer.module.css';
+import Component from '@/core/Component.js';
+import style from '@/styles/components/layout/footer.module.css';
 
 export default class Footer extends Component {
   template() {

@@ -1,8 +1,8 @@
-import Component from '../core/Component.js';
-import style from '../styles/pages/index.module.css';
-import Header from '../components/layout/header.js';
-import Footer from '../components/layout/footer.js';
-import Banner from '../components/layout/banner.js';
+import Component from '@/core/Component.js';
+import style from '@/styles/pages/index.module.css';
+import Header from '@/components/layout/header.js';
+import Footer from '@/components/layout/footer.js';
+import Banner from '@/components/layout/banner.js';
 
 export default class Home extends Component {
   constructor($target) {

@@ -1,5 +1,5 @@
-import Component from '../core/Component.js';
-import style from '../styles/components/main.module.css';
+import Component from '@/core/Component.js';
+import style from '@/styles/components/main.module.css';
 
 export default class Main extends Component {
   constructor() {

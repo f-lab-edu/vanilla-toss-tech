@@ -1,6 +1,6 @@
-import logo from '../../assets/logo-image.png';
-import Component from '../../core/Component.js';
-import style from '../../styles/components/layout/header.module.css';
+import logo from '@/assets/logo-image.png';
+import Component from '@/core/Component.js';
+import style from '@/styles/components/layout/header.module.css';
 
 export default class Header extends Component {
   template() {
