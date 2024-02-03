@@ -1,0 +1,13 @@
+.home__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.home__main {
+  max-width: 1140px;
+  height: 100%;
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 192px;
+}

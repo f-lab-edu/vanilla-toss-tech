@@ -1,0 +1,14 @@
+:root {
+  --white: #fff;
+  --greyOpacity200: rgba(0, 27, 55, 0.1);
+  --grey50: #f9fafb;
+  --grey500: #8b95a1;
+  --grey600: #6b7684;
+  --grey700: #4e5968;
+  --grey800: #333d4b;
+  --adaptiveGrey800: #333d4b;
+  --blue500: #3182f6;
+  --blue700: #1b64da;
+
+  --font-size-h3: 36px;
+}
