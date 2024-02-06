@@ -3,8 +3,9 @@ import Home from '@/pages/index.js';
 import Main from '@/components/main.js';
 import Article from '@/pages/article.js';
 import NotFound from '@/pages/notFound.js';
+import { isReady } from '@/mocks/index.js';
 
-export default () => {
+export default async () => {
   const createPages = (container) => {
     const main = () => new Main(container);
     const article = () => new Article(container);
@@ -33,6 +34,8 @@ export default () => {
     home.render();
     createRouter($container).start();
   };
-
-  document.addEventListener('DOMContentLoaded', start);
+  //const ready = await isReady();
+  if (true) {
+    document.addEventListener('DOMContentLoaded', start);
+  }
 };
