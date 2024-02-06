@@ -1,11 +1,12 @@
 import { HttpResponse, http } from 'msw';
-import getArticlesList from '@/mocks/getArticlesList.json';
+import articlesList from '@/mocks/articlesList.json';
+import article from '@/mocks/article.json';
 
 export const handlers = [
   http.get('/api/articles', () => {
-    return HttpResponse.json(getArticlesList);
+    return HttpResponse.json(articlesList);
   }),
-  // http.get('/api/article/:id', (_, res, ctx) => {
-  //   return res(ctx.status(200), ctx.json(getArticleHandler));
-  // }),
+  http.get('/api/article/:id', () => {
+    return HttpResponse.json(article);
+  }),
 ];
