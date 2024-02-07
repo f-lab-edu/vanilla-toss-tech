@@ -1,8 +1,16 @@
-const BASE_URL = '/api';
+import axios from 'axios';
 
-export const fetchData = async (url, options = {}) => {
-  const response = await fetch(`${BASE_URL}${url}`, options);
-  const data = await response.json();
-  console.log(data);
-  return data;
+const instance = axios.create({
+  baseURL: '/api',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+export const fetchData = (url) => {
+  try {
+    return instance.get(url).then((res) => res.data);
+  } catch (e) {
+    console.error('error from apis/index.js :', e);
+  }
 };

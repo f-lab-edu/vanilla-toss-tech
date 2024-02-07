@@ -1,4 +1,4 @@
-export const isReady = async () => {
+export const startMocks = async () => {
   try {
     const { worker } = await import('@/mocks/browser');
     worker.start();

@@ -3,22 +3,30 @@ import style from '@/styles/components/main.module.css';
 import { fetchData } from '@/apis/index.js';
 import articlesList from '@/mocks/articlesList.json';
 import Router from '@/router.js';
+import { formatDate } from '@/utils';
 
 export default class Main extends Component {
   constructor() {
     super(document.querySelector('main'));
   }
 
+  setup() {
+    this.$state = {
+      articles: {},
+    };
+  }
+
   template() {
     return `
       <span class="${style.main__subject}">개발</span>
-      <ul class="${style.main__list}">
-      </ul>
+      <ul class="${style.main__list}"></ul>
       `;
   }
 
   mounted() {
+    this.fetchArticles();
     const $main__list = this.$target.querySelector('ul');
+    // const articles = await this.getArticlesList();
     Object.entries(articlesList.articles).forEach(([id, content]) => {
       $main__list.prepend(this.createListElement({ id, ...content }));
     });
@@ -39,26 +47,28 @@ export default class Main extends Component {
           <span class="${style.main__summary}">
             <p>${summary}</p>
           </span>
-          <p class="${style.main__date}">${createdDate}</p>
+          <p class="${style.main__date}">${formatDate(createdDate)}</p>
         </div>
       </a>
     `;
     return article;
   }
 
-  async getArticlesList() {
-    const result = await fetchData('/articles', { method: 'GET' });
-    if (!result) return null;
-
-    return result.articles;
+  async fetchArticles() {
+    try {
+      const result = await fetchData('/articles');
+      console.log('result', result);
+      this.$state.articles = result.articles;
+    } catch (e) {
+      console.error('error from main.js : ', e);
+    }
   }
 
   setEvent() {
     this.addEvent('click', 'li > a', (e) => {
       const targetElement = e.target.closest('li');
       const articleId = targetElement.id;
-
-      window.history.pushState('', '', `/article/${articleId}`);
+      window.history.pushState(null, '', `/article/${articleId}`);
       const $container = document.querySelector('#app');
       const router = new Router($container);
       router.start();
