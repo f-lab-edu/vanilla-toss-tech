@@ -1,40 +1,18 @@
 import Router from '@/router.js';
 import Home from '@/pages/index.js';
-import Main from '@/components/main.js';
-import Article from '@/pages/article.js';
-import NotFound from '@/pages/notFound.js';
-import { startMocks } from '@/mocks/index.js';
 
-export default () => {
-  const createPages = (container) => {
-    const main = () => new Main(container);
-    const article = () => new Article(container);
-    const notFound = () => new NotFound(container);
-    return {
-      main,
-      article,
-      notFound,
-    };
-  };
+function App({ $container }) {
+  this.$container = $container;
 
-  const createRouter = (container) => {
-    const pages = createPages(container);
-    const router = new Router(container);
-    router.addRoute('/', pages.main);
-    router.addRoute('/tech', pages.main);
-    router.addRoute('/design', pages.main);
-    router.addRoute('/article/:id', pages.article);
-    router.setNotFound(pages.notFound);
-    return router;
-  };
-
-  const start = () => {
-    startMocks();
-    const $container = document.querySelector('#app');
+  const init = () => {
     const home = new Home($container);
     home.render();
-    createRouter($container).start();
+
+    const router = new Router($container);
+    router.start();
   };
 
-  document.addEventListener('DOMContentLoaded', start());
-};
+  init();
+}
+
+export default App;

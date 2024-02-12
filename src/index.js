@@ -1,5 +1,16 @@
 import '@/styles/reset.css';
 import '@/styles/root.module.css';
-import app from '@/app.js';
+import App from '@/app.js';
+import { initMocks } from '@/mocks/index.js';
 
-app();
+const init = async () => {
+  const hasMocks = await initMocks();
+  if (hasMocks) {
+    const $app = document.querySelector('#app');
+    new App({
+      $container: $app,
+    });
+  }
+};
+
+document.addEventListener('DOMContentLoaded', init);

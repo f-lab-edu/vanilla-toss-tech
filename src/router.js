@@ -1,56 +1,23 @@
 import Component from '@/core/Component.js';
+import Main from '@/components/main.js';
+import Article from '@/pages/article.js';
+import NotFound from '@/pages/notFound.js';
+import { navigate } from './navigate';
+
+const routes = [
+  { path: /^\/$/, element: Main },
+  { path: /^\/tech$/, element: Main },
+  { path: /^\/design$/, element: Main },
+  { path: /^\/article\/[\w]+$/, element: Article },
+];
 
 export default class Router extends Component {
-  /**
-   * router의 초기값을 설정
-   */
-  setup() {
-    this.$state = {
-      routes: [],
-      currentPath: null,
-    };
+  constructor($container) {
+    super($container);
   }
 
-  /**
-   * 라우터 등록
-   * @param {*} fragment URL
-   * @param {*} component 렌더링 할 컴포넌트
-   */
-  addRoute(fragment, component) {
-    const params = [];
-    const ROUTE_PARAMETER_REGEXP = /:(\w+)/g;
-    const URL_REGEXP = '([^\\/]+)';
-
-    const parsedFragment = fragment
-      .replace(ROUTE_PARAMETER_REGEXP, (_, paramName) => {
-        params.push(paramName);
-        return URL_REGEXP;
-      })
-      .replace(/\//g, '\\/');
-
-    this.$state.routes.push({
-      fragmentRegExp: new RegExp(`^${parsedFragment}$`),
-      component,
-      params,
-    });
-  }
-
-  /**
-   * URL의 쿼리 매개변수를 추출
-   * @param {*} route
-   * @param {*} params
-   * @returns
-   */
-  static getUrlParams(route, path) {
-    const params = {};
-    const matches = path.match(route.fragmentRegExp);
-    matches.shift();
-    matches.forEach((paramValue, index) => {
-      const paramName = route.params[index];
-      params[paramName] = paramValue;
-    });
-    // params = {name: 'IU', song: 'raindrop'}
-    return params;
+  findMatchedRoute() {
+    return routes.find((route) => route.path.test(location.pathname));
   }
 
   /**
@@ -58,39 +25,27 @@ export default class Router extends Component {
    * @returns component
    */
   navigate() {
-    const { pathname } = window.location;
-    if (this.$state.currentPath === pathname) return;
-
-    const currentRoute = this.$state.routes.find((route) => {
-      const { fragmentRegExp } = route;
-      return fragmentRegExp.test(pathname);
-    });
-
-    if (!currentRoute) {
-      this.notFound();
-      return;
-    }
-
-    this.$state.currentPath = pathname;
-
-    const urlParams = Router.getUrlParams(currentRoute, pathname);
-    currentRoute.component(urlParams);
-  }
-
-  /**
-   * 현재 URL에 대응하는 페이지가 없을 경우 notFound컴포넌트 렌더링
-   * @param {*} component
-   * @returns notFound component
-   */
-  setNotFound(component) {
-    this.notFound = component;
-    return this;
+    const containerPage = this.findMatchedRoute()?.element || NotFound;
+    new containerPage(this.$container);
   }
 
   /**
    * 라우터 동작의 초기 설정
    */
   start() {
-    window.addEventListener('popstate', this.navigate());
+    window.addEventListener('historychange', ({ detail }) => {
+      const { to, isReplace } = detail;
+      if (isReplace || to === location.pathname)
+        history.replaceState(null, '', to);
+      else history.pushState(null, '', to);
+
+      this.navigate();
+    });
+
+    window.addEventListener('popstate', () => {
+      this.navigate();
+    });
+
+    this.navigate();
   }
 }

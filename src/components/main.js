@@ -1,8 +1,8 @@
 import Component from '@/core/Component.js';
 import style from '@/styles/components/main.module.css';
 import { fetchData } from '@/apis/index.js';
-import articlesList from '@/mocks/articlesList.json';
 import Router from '@/router.js';
+import { navigate } from '@/navigate.js';
 import { formatDate } from '@/utils';
 
 export default class Main extends Component {
@@ -23,11 +23,11 @@ export default class Main extends Component {
       `;
   }
 
-  mounted() {
-    this.fetchArticles();
+  async mounted() {
+    await this.fetchArticles();
+    window.scrollTo(0, 0);
     const $main__list = this.$target.querySelector('ul');
-    // const articles = await this.getArticlesList();
-    Object.entries(articlesList.articles).forEach(([id, content]) => {
+    Object.entries(this.$state.articles).forEach(([id, content]) => {
       $main__list.prepend(this.createListElement({ id, ...content }));
     });
   }
@@ -57,7 +57,6 @@ export default class Main extends Component {
   async fetchArticles() {
     try {
       const result = await fetchData('/articles');
-      console.log('result', result);
       this.$state.articles = result.articles;
     } catch (e) {
       console.error('error from main.js : ', e);
@@ -67,11 +66,9 @@ export default class Main extends Component {
   setEvent() {
     this.addEvent('click', 'li > a', (e) => {
       const targetElement = e.target.closest('li');
+      e.preventDefault();
       const articleId = targetElement.id;
-      window.history.pushState(null, '', `/article/${articleId}`);
-      const $container = document.querySelector('#app');
-      const router = new Router($container);
-      router.start();
+      navigate(`/article/${articleId}`);
     });
   }
 }
