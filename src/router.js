@@ -12,10 +12,6 @@ const routes = [
 ];
 
 export default class Router extends Component {
-  constructor($container) {
-    super($container);
-  }
-
   findMatchedRoute() {
     return routes.find((route) => route.path.test(location.pathname));
   }

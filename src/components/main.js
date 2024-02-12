@@ -1,7 +1,6 @@
 import Component from '@/core/Component.js';
 import style from '@/styles/components/main.module.css';
 import { fetchData } from '@/apis/index.js';
-import Router from '@/router.js';
 import { navigate } from '@/navigate.js';
 import { formatDate } from '@/utils';
 
