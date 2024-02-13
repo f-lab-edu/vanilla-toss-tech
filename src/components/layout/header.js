@@ -39,7 +39,7 @@ export default class Header extends Component {
       if (!(target instanceof HTMLAnchorElement)) return;
 
       e.preventDefault();
-      const targetURL = target.href.replace('http://localhost:5173', '');
+      const targetURL = target.href.replace(import.meta.env.BASEURL, '');
       navigate(targetURL);
     });
   }
