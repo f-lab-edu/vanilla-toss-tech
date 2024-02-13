@@ -3,8 +3,8 @@ import '@/styles/root.module.css';
 import App from '@/app.js';
 import { initMocks } from '@/mocks/index.js';
 
-const init = () => {
-  const hasMocks = initMocks();
+const init = async () => {
+  const hasMocks = await initMocks();
   if (hasMocks) {
     const $app = document.querySelector('#app');
     new App({
