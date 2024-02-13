@@ -2,7 +2,6 @@ import Component from '@/core/Component.js';
 import Main from '@/components/main.js';
 import Article from '@/pages/article.js';
 import NotFound from '@/pages/notFound.js';
-import { navigate } from './navigate';
 
 const routes = [
   { path: /^\/$/, element: Main },

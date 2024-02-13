@@ -1,7 +1,6 @@
 import Component from '@/core/Component.js';
 import styles from '@/styles/pages/article.module.css';
 import { fetchData } from '@/apis/index.js';
-import article from '@/mocks/article.json';
 import { formatDate } from '@/utils';
 
 export default class Article extends Component {
