@@ -50,27 +50,27 @@ export default class Footer extends Component {
         <ul class="${style.footer__social}">
             <li class="${style.footer__social_item}">
                 <a aria-label="Toss Facebook" target="_blank" href="https://www.facebook.com/toss.official">
-                    <img src="https://static.toss.im/assets/homepage/safety/icn-facebook.svg" alt="Toss Facebook">
+                    <img src="${import.meta.env.VITE_IMGURL}/assets/homepage/safety/icn-facebook.svg" alt="Toss Facebook">
                 </a>
             </li>
             <li class="${style.footer__site_group_title}">
                 <a aria-label="Toss blog" target="_blank" href="https://blog.toss.im">
-                    <img src="https://static.toss.im/assets/homepage/safety/icn-blog.svg" alt="Toss blog">
+                    <img src="${import.meta.env.VITE_IMGURL}/assets/homepage/safety/icn-blog.svg" alt="Toss blog">
                 </a>
             </li>
             <li class=""${style.footer__social_item}">
                 <a aria-label="Toss Naver Post" target="_blank" href="https://post.naver.com/tossblog">
-                    <img src="https://static.toss.im/assets/homepage/safety/icn-naver.svg" alt="Toss Naver Post">
+                    <img src="${import.meta.env.VITE_IMGURL}/assets/homepage/safety/icn-naver.svg" alt="Toss Naver Post">
                 </a>
             </li>
             <li class=""${style.footer__social_item}">
                 <a aria-label="Toss Twitter" target="_blank" href="https://twitter.com/toss__official">
-                    <img src="https://static.toss.im/assets/homepage/safety/icn-twitter.svg" alt="Toss Twitter">
+                    <img src="${import.meta.env.VITE_IMGURL}/assets/homepage/safety/icn-twitter.svg" alt="Toss Twitter">
                 </a>
             </li>
             <li class=""${style.footer__social_item}">
                 <a aria-label="Toss Instagram" target="_blank" href="https://www.instagram.com/toss.im/">
-                    <img src="https://static.toss.im/assets/homepage/safety/icn-instagram.svg" alt="Toss Instagram">
+                    <img src="${import.meta.env.VITE_IMGURL}/assets/homepage/safety/icn-instagram.svg" alt="Toss Instagram">
                 </a>
             </li>
         </ul>
