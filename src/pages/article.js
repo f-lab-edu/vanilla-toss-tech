@@ -57,7 +57,8 @@ export default class Article extends Component {
 
   async fetchArticle() {
     try {
-      const result = await fetchData('/article/1');
+      const articleId = location.pathname.split('/')[2];
+      const result = await fetchData(`/article/${articleId}`);
       this.$state.article = result;
     } catch (e) {
       console.error('error from article.js : ', e);
