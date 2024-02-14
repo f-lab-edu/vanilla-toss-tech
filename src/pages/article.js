@@ -59,7 +59,7 @@ export default class Article extends Component {
     try {
       const articleId = location.pathname.split('/')[2];
       const result = await fetchData(`/article/${articleId}`);
-      this.$state.article = result;
+      this.$state.article = result.find((article) => article.id === articleId);
     } catch (e) {
       console.error('error from article.js : ', e);
     }
