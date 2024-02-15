@@ -1,44 +1,73 @@
 import Component from '@/core/Component.js';
 import style from '@/styles/components/main.module.css';
+import { fetchData } from '@/apis/index.js';
+import { navigate } from '@/navigate.js';
+import { formatDate } from '@/utils';
 
 export default class Main extends Component {
   constructor() {
     super(document.querySelector('main'));
   }
 
+  setup() {
+    this.$state = {
+      articles: {},
+    };
+  }
+
   template() {
     return `
       <span class="${style.main__subject}">개발</span>
-      <ul class="${style.main__list}">
-        <li class="${style.main__item}">
-          <a class="${style.main__container}">
-            <img alt="썸네일 이미지" src="https://static.toss.im/assets/payments/contents/writer-2-thumb.jpg" />
-            <div>
-              <span class="${style.main__title}">
-                그 많은 개발 문서는 누가 다 만들었을까 (2) 개발자의 학습을 돕는 모든 것
-              </span>
-              <span class="${style.main__summary}">
-                토스의 테크니컬 라이터가 하는 일에 이어, 개발자 경험 전반으로 역할을 확장해 온 이야기를 공유해요.
-              </span>
-              <span class="${style.main__date}">2020.01.25</span>
-            </div>
-          </a>
-        </li>
-        <li class="${style.main__item}">
-          <a class="${style.main__container}">
-            <img alt="썸네일 이미지" src="https://static.toss.im/assets/payments/contents/writer-thumb.jpg" />
-            <div>
-              <span class="${style.main__title}">
-                그 많은 개발 문서는 누가 다 만들었을까 (1) 개발자의 학습을 돕는 모든 것
-              </span>
-              <span class="${style.main__summary}">
-                토스의 테크니컬 라이터가 하는 일에 이어, 개발자 경험 전반으로 역할을 확장해 온 이야기를 공유해요.
-              </span>
-              <span class="${style.main__date}">2020.01.23</span>
-            </div>
-        </a>
-        </li>
-      </ul>
+      <ul class="${style.main__list}"></ul>
       `;
+  }
+
+  async mounted() {
+    await this.fetchArticles();
+    window.scrollTo(0, 0);
+    const $main__list = this.$target.querySelector('ul');
+    Object.entries(this.$state.articles).forEach(([id, content]) => {
+      $main__list.prepend(this.createListElement({ id, ...content }));
+    });
+  }
+
+  createListElement(props) {
+    const { createdDate, id, summary, title, imageUrl } = props;
+    const article = document.createElement('li');
+    article.id = id;
+    article.className = style.main__item;
+    article.innerHTML = `
+      <a class="${style.main__container}">
+        <img alt="썸네일 이미지" src="${imageUrl}" />
+        <div>
+          <span class="${style.main__title}">
+            <p>${title}</p>
+          </span>
+          <span class="${style.main__summary}">
+            <p>${summary}</p>
+          </span>
+          <p class="${style.main__date}">${formatDate(createdDate)}</p>
+        </div>
+      </a>
+    `;
+    return article;
+  }
+
+  async fetchArticles() {
+    try {
+      const result = await fetchData('/articles');
+      this.$state.articles = result.articles;
+    } catch (e) {
+      console.error('error from main.js : ', e);
+    }
+  }
+
+  setEvent() {
+    this.addEvent('click', 'li > a', (e) => {
+      const targetElement = e.target.closest('li');
+      e.preventDefault();
+      const articleId = targetElement.id;
+      navigate(`/article/${articleId}`);
+    });
   }
 }

@@ -1,6 +1,7 @@
 import logo from '@/assets/logo-image.png';
 import Component from '@/core/Component.js';
 import style from '@/styles/components/layout/header.module.css';
+import { navigate } from '@/navigate.js';
 
 export default class Header extends Component {
   template() {
@@ -29,8 +30,17 @@ export default class Header extends Component {
   }
 
   setEvent() {
-    this.addEvent('click', 'navbar__button', () => {
+    this.addEvent('click', 'li > button', () => {
       this.goRecruit();
+    });
+
+    this.addEvent('click', 'nav', (e) => {
+      const target = e.target.closest('a');
+      if (!(target instanceof HTMLAnchorElement)) return;
+
+      e.preventDefault();
+      const targetURL = target.href.replace(import.meta.env.VITE_BASEURL, '');
+      navigate(targetURL);
     });
   }
 

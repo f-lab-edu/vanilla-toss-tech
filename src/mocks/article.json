@@ -1,0 +1,232 @@
+[
+  {
+    "id": "1",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2021/04/techblog-01-about-fechapter.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "토스 프론트엔드 챕터를 소개합니다!",
+    "editorName": "김토스",
+    "shortDescription": "테크니컬 라이터",
+    "createdDate": "20210428",
+    "body": "안녕하세요. 토스 프론트엔드 챕터 블로그에 오신 것을 환영합니다. 앞으로 토스팀에서 프론트엔드 개발을 하면서 생기는 이야기들을 정리하여 블로그로 전해드리려고 합니다.토스 프론트엔드 챕터는?토스에서는 같은 일을 하는 사람들을 모아서 챕터라고 합니다. 프론트엔드 챕터는 JavaScript, HTML, CSS를 이용하여 웹 프론트엔드 제품을 만드는 직군을 가리키는 말입니다.토스의 프론트엔드 개발자들은 ‘사일로’라고 하는 목적 조직에서 각자 독립적으로 일하고 있습니다. 각각의 사일로는 토스에서 하나의 제품을 전담하며, 작은 스타트업처럼 독립적으로 일합니다. 예를 들어, 송금을 담당하는 사일로는 송금 사일로, 결제를 담당하는 사일로는 결제 사일로입니다.사일로는 기본적으로 프로덕트 오너, 디자이너, 서버 개발자, 프론트엔드 개발자, 데이터 분석가 1명씩으로 구성됩니다. 사일로에서 프론트엔드 개발자는 다른 직군의 동료들과 가까운 자리에서 밀접하게 협업하면서, 주어진 반기별 OKR(목표)를 달성하기 위해 꾸준히 제품 개선에 참여하고 있습니다.→ 토스의 첫인상을 책임지는 사람들, 프론트엔드 개발자를 만나다함께 협업하기각 사일로에서 독립적으로 일하는 프론트엔드 개발자들이지만, 하나의 팀처럼 같이 협업하고 있습니다. 예를 들어서,함께 라이브러리를 개발하고 있습니다. UI 컴포넌트, 비동기 처리와 같이 프론트엔드 개발을 하면서 꼭 필요한 것들이 모두 라이브러리화되어 있습니다. 서비스를 개발하다가 적절히 추상화된 코드 조각이 생기면 라이브러리에 꾸준히 반영하고 있습니다.서로 코드를 리뷰합니다. 라이브러리 개발과 서비스 개발 모두에서 코드 리뷰가 의무화되어 있습니다. 코드 리뷰를 주고받으면서 더 나은 설계에 대해 토론하고, 새로운 기술 채택에 대해 의견을 나누고 있습니다.챕터 위클리에 참여합니다. 주기적으로 모든 프론트엔드 개발자들이 모여서 그동안 있었던 개발 업무를 주제로 이야기합니다. 챕터 위클리에서는 돌아가면서 “Tech Talk” 라고 하는 작은 발표를 열고 있는데, 개발 노하우나 새로운 기술 토픽을 소개합니다.그 이외에도 비정기적으로 기술 스터디를 열기도 합니다. 서로 자리가 떨어져 있어도 슬랙 채널이나 각자의 자리에서 활발하게 소통합니다.프론트엔드 챕터가 사용하는 기술React, TypeScript, Next.js가 토스 프론트엔드 챕터가 다루는 기술의 핵심을 이루고 있습니다.React: 토스 웹 페이지는 대부분 React로 구성되어 있습니다. 제품의 성격에 따라 React Suspense와 같은 실험적인 기술을 적극적으로 도입하고는 합니다.TypeScript: 토스에서는 모든 코드를 TypeScript로 작성합니다. 사람의 실수를 줄이고, 빌드 시간에 미리 오류를 찾아냄으로써 웹 서비스를 안정적으로 운영하는 데에 큰 도움이 되고 있습니다.Next.js: 토스 사용자들에게 더 빠른 웹을 보여주기 위해 적극적으로 SSR와 Static Export를 활용하고 있습니다.그 이외에 아래 기술을 보조적으로 사용하고 있어요.Yarn Berry: 토스에서 의존성을 관리하기 위해 사용하는 패키지 매니저입니다. NPM보다 엄격히 package.json을 관리함으로써 개발자의 실수를 더 빨리 발견할 수 있도록 해 줍니다. NPM보다 모듈을 로드하는 속도가 빠릅니다. (홈페이지)Emotion: CSS를 다루기 위해 emotion 라이브러리를 사용하고 있습니다. CSS Prop으로 생산적으로 스타일을 다룰 수 있습니다. 서버 사이드 렌더링을 했을 때 첫 렌더에 포함되는 Critical CSS만을 HTML에 포함해줌으로써 더 빠르게 화면을 보여줄 수 있도록 도와주기도 합니다.React Query, SWR: 비동기를 다루는 상황에서 대부분 사용하고 있는 라이브러리입니다. 선언적으로 비동기 자원을 관리하고 캐싱할 수 있습니다.Tech Talks토스에서는 모든 프론트엔드 챕터 구성원이 모이는 챕터 위클리에서 Tech Talk라고 하는 작은 발표를 열고 있습니다. 발표의 주제는 서비스 개발을 할 때의 꿀팁부터 React Suspense 소개까지 다양합니다. 2019년부터 지금까지 총 90개 이상의 크고 작은 발표가 있었습니다.토스 FE 블로그의 아티클은 위클리에서 있었던 Tech Talk의 내용을 간단히 정리한 것입니다.기술 블로그에서 공개된 내용보다 더 좋은 발표를 듣고 싶다면, 그리고 저희와 함께 웹 서비스의 문제를 풀어가고 싶다면, 언제든 토스팀에 지원해주세요. 모든 단계에서 최대한 빠르고 솔직하게 피드백을 드리겠습니다.재미있게 읽으셨나요?좋았는지, 아쉬웠는지, 아래 이모지를 눌러 의견을 들려주세요.😍🤔아티클 공유하기"
+  },
+  {
+    "id": "2",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2021/04/techblog-02-webcash.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "웹 서비스 캐시 똑똑하게 다루기",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20210429",
+    "body": "토스 프론트엔드 챕터에서는 웹 성능을 최대한으로 높이기 위해 HTTP 캐시를 적극적으로 사용하고 있습니다. 캐시를 잘못 관리했을 때, 원하는 시점에 캐시가 사라지지 않을 수 있습니다. 필요 이상으로 HTTP 요청이 발생하기도 합니다.HTTP 캐시를 효율적으로 관리하려면 Cache-Control 헤더를 섬세하게 조절해야 합니다. 토스 프론트엔드 챕터에서 다양한 생명 주기를 가지는 캐시를 다루면서 알게 된 노하우를 테크 블로그로 공유합니다.캐시의 생명 주기HTTP에서 리소스(Resource)란 웹 브라우저가 HTTP 요청으로 가져올 수 있는 모든 종류의 파일을 말합니다. 대표적으로 HTML, CSS, JS, 이미지, 비디오 파일 등이 리소스에 해당합니다.웹 브라우저가 서버에서 지금까지 요청한 적이 없는 리소스를 가져오려고 할 때, 서버와 브라우저는 완전한 HTTP 요청/응답을 주고받습니다. HTTP 요청도 완전하고, 응답도 완전합니다. 이후 HTTP 응답에 포함된 Cache-Control 헤더에 따라 받은 리소스의 생명 주기가 결정됩니다.캐시의 유효 기간: max-age서버의 Cache-Control 헤더의 값으로 max-age=<seconds> 값을 지정하면, 이 리소스의 캐시가 유효한 시간은 <seconds> 초가 됩니다.캐시의 유효 기간이 지나기 전한 번 받아온 리소스의 유효 기간이 지나기 전이라면, 브라우저는 서버에 요청을 보내지 않고 디스크 또는 메모리에서만 캐시를 읽어와 계속 사용합니다.메모리 캐시에서 불러온 HTTP 리소스예를 들어, 위 개발자 도구 캡처와 같이 어떤 JavaScript 파일을 요청하는 경우를 가정합시다. 이 리소스가 가지는 Cache-Control 헤더 값은 max-age=31536000 이기 때문에, 이 리소스는 1년(31,536,000초)동안 캐시할 수 있습니다.스크린샷에서는 유효한 캐시가 메모리에 남아 있기 때문에 (from memory cache) 라고 표기된 것을 확인할 수 있습니다.“서버에 요청을 보내지 않고” 라고 하는 말에 주의합시다. 한번 브라우저에 캐시가 저장되면 만료될 때까지 캐시는 계속 브라우저에 남아 있게 됩니다. 때문에 CDN Invalidation을 포함한 서버의 어떤 작업이 있어도 브라우저의 유효한 캐시를 지우기는 어렵습니다.Note: Cache-Control max-age 값 대신 Expires 헤더로 캐시 만료 시간을 정확히 지정할 수도 있습니다.캐시의 유효 기간이 지난 이후: 재검증그렇다면 캐시의 유효 기간이 지나면 캐시가 완전히 사라지게 될까요? 그렇지는 않습니다. 대신 브라우저는 서버에 조건부 요청(Conditional request)을 통해 캐시가 유효한지 재검증(Revalidation)을 수행합니다.재검증 결과 브라우저가 가지고 있는 캐시가 유효하다면, 서버는 [304 Not Modified] 요청을 내려줍니다. [304 Not Modified] 응답은 HTTP 본문을 포함하지 않기 때문에 매우 빠르게 내려받을 수 있습니다. 예를 들어, 위 스크린샷을 살펴보면 59.1KB 리소스의 캐시 검증을 위해 324바이트만의 네트워크 송수신만을 주고받았음을 볼 수 있습니다.If-None-Match와 If-Modified-Since가 포함된 요청대표적인 재검증 요청 헤더들로는 아래와 같은 헤더가 있습니다.If-None-Match: 캐시된 리소스의 ETag 값과 현재 서버 리소스의 ETag 값이 같은지 확인합니다.If-Modified-Since: 캐시된 리소스의 Last-Modified 값 이후에 서버 리소스가 수정되었는지 확인합니다.위의 ETag 와 Last-Modified 값은 기존에 받았던 리소스의 응답 헤더에 있는 값을 사용합니다.재검증 결과 캐시가 유효하지 않으면, 서버는 [200 OK] 또는 적합한 상태 코드를 본문과 함께 내려줍니다. 추가로 HTTP 요청을 보낼 필요 없이 바로 최신 값을 내려받을 수 있기 때문에 매우 효율적이죠. 😉max-age=0 주의보 정의대로라면 max-age=0 값이 Cache-Control 헤더로 설정되었을 때, 매번 리소스를 요청할 때마다 서버에 재검증 요청을 보내야 할 것입니다. 그렇지만 일부 모바일 브라우저의 경우 웹 브라우저를 껐다 켜기 전까지 리소스가 만료되지 않도록 하는 경우가 있습니다. 네트워크 요청을 아끼고 사용자에게 빠른 웹 경험을 제공하기 위해서라고 합니다.이 경우에는 웹 브라우저를 껐다 켜거나, 아래에서 소개할 no-store 값을 사용해주세요.no-cache와 no-storeCache-Control에서 가장 헷갈리는 두 가지 값이 있다면 바로 no-cache 와 no-store 입니다. 이름은 비슷하지만 두 값의 동작은 매우 다릅니다.no-cache 값은 대부분의 브라우저에서 max-age=0 과 동일한 뜻을 가집니다. 즉, 캐시는 저장하지만 사용하려고 할 때마다 서버에 재검증 요청을 보내야 합니다.no-store 값은 캐시를 절대로 해서는 안 되는 리소스일 때 사용합니다. 캐시를 만들어서 저장조차 하지 말라는 가장 강력한 Cache-Control 값입니다. no-store를 사용하면 브라우저는 어떤 경우에도 캐시 저장소에 해당 리소스를 저장하지 않습니다.캐시의 위치CDN과 같은 중간 서버를 사용할 때, 캐시는 여러 곳에 생길 수 있습니다. 서버가 가지고 있는 원래 응답을 CDN이 캐시합니다. CDN의 캐시된 응답은 사용자 브라우저가 다시 가져와서 캐시합니다. 이처럼 HTTP 캐시는 여러 레이어에 저장될 수 있기 때문에 세심히 다루어야 합니다.CDN Invalidation일반적으로 캐시를 없애기 위해서 “CDN Invalidation”을 수행한다고 이야기합니다. CDN Invalidation은 위 다이어그램에서 가운데에 위치하는 CDN에 저장되어 있는 캐시를 삭제한다는 뜻입니다. 브라우저의 캐시는 다른 곳에 위치하기 때문에 CDN 캐시를 삭제한다고 해서 브라우저 캐시가 삭제되지는 않습니다.경우에 따라 중간 서버나 CDN이 여러 개 있는 경우도 발생하는데, 이 경우 전체 캐시를 날리려면 중간 서버 각각에 대해서 캐시를 삭제해야 합니다.이렇게 한번 저장된 캐시는 지우기 어렵기 때문에 Cache-Control의 max-age 값은 신중히 설정하여야 합니다.Cache-Control: public과 privateCDN과 같은 중간 서버가 특정 리소스를 캐시할 수 있는지 여부를 지정하기 위해 Cache-Control 헤더 값으로 public 또는 private을 추가할 수 있습니다.public은 모든 사람과 중간 서버가 캐시를 저장할 수 있음을 나타내고, private은 가장 끝의 사용자 브라우저만 캐시를 저장할 수 있음을 나타냅니다.기존과 max-age 값과 조합하려면 Cache-Control: public, max-age=86400 과 같이 콤마로 연결할 수 있습니다.s-maxage중간 서버에서만 적용되는 max-age 값을 설정하기 위해 s-maxage 값을 사용할 수 있습니다.예를 들어, Cache-Control 값을 s-maxage=31536000, max-age=0 과 같이 설정하면 CDN에서는 1년동안 캐시되지만 브라우저에서는 매번 재검증 요청을 보내도록 설정할 수 있습니다.토스에서의 Cache-Control토스 프론트엔드 챕터는 리소스의 성격에 따라 세심히 Cache-Control 헤더 값을 조절하고 있습니다.HTML 파일일반적으로 https://service.toss.im/toss-card/introduction 과 같은 HTML 리소스는 새로 배포가 이루어질 때마다 값이 바뀔 수 있습니다. 때문에 브라우저는 항상 HTML 파일을 불러올 때 새로운 배포가 있는지 확인해야 합니다.이런 리소스에 대해 토스 프론트엔드 챕터는 Cache-Control 값으로 max-age=0, s-maxage=31536000 을 설정했습니다. 이로써 브라우저는 HTML 파일을 가져올 때마다 서버에 재검증 요청을 보내고, 그 사이에 배포가 있었다면 새로운 HTML 파일을 내려받습니다.CDN은 계속해서 HTML 파일에 대한 캐시를 가지고 있도록 했습니다. 대신 배포가 이루어질 때마다 CDN Invalidation을 발생시켜 CDN이 서버로부터 새로운 HTML 파일들을 받아오도록 설정했습니다.JS, CSS 파일JavaScript나 CSS 파일은 프론트엔드 웹 서비스를 빌드할 때마다 새로 생깁니다. 토스 프론트엔드 챕터는 임의의 버전 번호를 URL 앞부분에 붙여서 빌드 결과물마다 고유한 URL을 가지도록 설정하고 있습니다.고유 버전 번호가 붙어 있는 JavaScript 파일이렇게 JS, CSS 파일을 관리했을 때, 같은 URL에 대해 내용이 바뀔 수 있는 경우는 없습니다. 내용이 바뀔 여지가 없으므로 리소스의 캐시가 만료될 일도 없습니다.이런 리소스에 대해 토스 프론트엔드 챕터는 Cache-Control 값으로 max-age의 최대치인 max-age=31536000 을 설정하고 있습니다. 이로써 새로 배포가 일어나지 않는 한, 브라우저는 캐시에 저장된 JavaScript 파일을 계속 사용합니다.캐시 설정을 섬세히 제어함으로써 사용자는 더 빠르게 HTTP 리소스를 로드할 수 있고, 개발자는 트래픽 비용을 절감할 수 있습니다. 위에서 Cache-Control와 ETag 헤더를 리소스의 성격에 따라 잘 설정하는 것만으로 캐시를 정확하게 설정할 수 있다는 것을 살펴보았습니다. HTTP 캐시로 고민하고 있는 분들께 도움이 되었기를 기대합니다.재미있게 읽으셨나요?좋았는지, 아쉬웠는지, 아래 이모지를 눌러 의견을 들려주세요.😍🤔아티클 공유하기"
+  },
+  {
+    "id": "3",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2021/05/techblog-03-jscodeshift.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "JSCodeShift로 기술 부채 청산하기",
+    "editorName": "김토스",
+    "shortDescription": "테크니컬 라이터",
+    "createdDate": "20210504",
+    "body": "토스 프론트엔드 챕터에서는 100개 이상의 서비스들이 작은 패키지 단위로 쪼개져 활발하게 개발되고 있는데요. 공통으로 사용하는 라이브러리에서 인터페이스가 변경되는 Breaking Change가 발생하면, 의존하고 있는 모든 서비스의 코드를 수정해야 했습니다. 관리하는 코드베이스가 점점 커지면서 해야 하는 작업의 양도 계속 늘어나고는 했습니다.이에 프론트엔드 챕터는 JSCodeShift를 도입하여 대부분의 코드 수정 작업을 자동화할 수 있었습니다. 토스팀이 JSCodeShift를 도입하면서 알게 된 점과 노하우를 테크 블로그로 공유합니다.JSCodeShift란?JSCodeShift는 Facebook이 만든 JavaScript/TypeScript 코드 수정 도구입니다. JSCodeShift를 통해 코드를 수정하는 코드를 작성할 수 있습니다.찾아 바꾸기와의 비교JSCodeShift를 도입하기 전, 토스에서는 대량의 코드 수정이 필요할 때면 IDE의 찾아 바꾸기(Find & Replace)를 사용했습니다. 그러나 찾아 바꾸기로는 안전하게 코드를 수정하는 데에 한계가 많았습니다.예시 1: console.log() 모두 삭제하기프로젝트 전체에 있는 console.log() 호출을 모두 제거하고 싶은 상황을 생각해봅시다. 간단한 예제임에도 쉽게 고칠 수 없는 엣지 케이스들이 발생합니다. 우선 console.log 안에 들어가는 인자의 내용이 달라질 수 있습니다. console.log에 여러 인자를 넘겨서 함수 호출이 여러 줄에 걸칠 수도 있습니다.이것을 정규식을 이용하여 어느 정도 해결할 수도 있습니다. 그러나 다양한 엣지케이스에 대응하기 위해서 정규식이 점점 복잡해지는 경우가 발생했습니다. 또 정규식은 정규 언어이기 때문에 기술적으로 대응할 수 없는 경우도 존재했습니다.예시 2: default import된 객체의 프로퍼티 수정하기아래와 같은 코드가 있었다고 생각해봅시다.import A from '@tossteam/a';\n\nA.foo();어느 순간 A.foo() 함수가 A.bar() 함수로 이름이 변경되었다고 가정해봅시다.Default import의 변수 이름은 사용하는 사람마다 임의로 정할 수 있기 때문에, 어떤 사람은 이 라이브러리를 B 라고 하는 이름으로 사용하고 있을 수도 있습니다. 때문에 이 라이브러리를 B.foo() 처럼 사용하고 있던 코드가 있었다면, B.bar() 로 수정해주어야 합니다.이런 경우는 찾아 바꾸기로 쉽게 대응하기 어렵습니다.JSCodeShift 기초JSCodeShift는 추상 구문 트리(AST, Abstract Syntax Tree)를 이용하여 코드를 수정하는 방법을 제공함으로써 코드 수정 작업을 정확하고 편리하게 할 수 있도록 도와줍니다.추상 구문 트리 (AST)추상 구문 트리는 프로그램의 소스 코드를 쉽게 다룰 수 있도록 도와주는 자료구조입니다.예를 들어서, 다음 import 문을 추상 구문 트리로 옮기면 이런 모습이 됩니다.import React, { useMemo } from 'react';ImportDeclaration {\n  specifiers: [\n    ImportDefaultSpecifier {\n      local: Identifier {\n        name: \"React\"\n      }\n    },\n    ImportSpecifier {\n      local: Identifier {\n        name: \"useMemo\"\n      }\n    }\n  ],\n  source: Literal {\n    value: \"react\"\n  }\n}살펴보면 import 문이 ImportDeclaration 객체로 바뀌었습니다. 또 내부에서 사용되는 Default Import와 Named Import, 라이브러리 이름이 알맞은 객체로 옮겨진 것을 확인할 수 있습니다.ASTExplorer작성한 코드의 추상 구문 트리를 ASTExplorer로 쉽게 확인할 수 있습니다. 코드만 붙여넣으면 해당하는 구문 트리를 바로 확인할 수 있어 편리합니다. 소스 코드의 특정 부분에 커서를 옮기면 그 부분이 트리의 어떤 부분에 해당하는지 바로 볼 수 있기도 합니다. 😉 추상 구문 트리에 익숙하지 않다면, 사용해보시는 것을 권장합니다.라이브러리별 추상 구문 트리라이브러리마다 사용하는 추상 구문 트리의 모습은 다를 수 있습니다. 예를 들어서 같은 JavaScript를 다루더라도 ESLint가 사용하는 트리와 Babel이 사용하는 트리는 약간 다릅니다. JSCodeShift는 Babel이 사용하는 트리를 사용하고 있습니다.ASTExplorer 상단 메뉴에서 사용할 추상 구문 트리를 선택할 수 있습니다. JSCodeShift가 사용하는 트리는 @babel/parser 입니다.JSCodeShift 사용하기JSCodeShift로 코드를 수정하는 과정은 크게 4가지 작업으로 나눌 수 있습니다.AST로 파싱: 파일의 소스 코드를 AST로 파싱합니다.수정할 노드 선택: AST에서 수정할 노드를 선택합니다.수정하기: 검색한 노드를 JSCodeShift가 제공하는 유틸리티로 코드를 변경시킵니다.소스 코드로 내보내기: 수정된 AST를 JavaScript 소스 코드로 내보냅니다.예를 들어, 이런 형식으로 코드를 작성합니다./* transformSomeCode.js */\nfunction transformSomeCode(file, { jscodeshift }) {\n  // 1. AST로 파싱\n  const tree = jscodeshift(file.source);\n\n  // 2. 수정할 노드 선택\n  const nodes = tree.find(...);\n\n  // 3. 수정\n  jscodeshift(nodes)\n    .remove() | .replaceWith() | .insertBefore()\n\n  // 4. 소스 코드로 내보내기\n  return tree.toSource();\n}이후 JSCodeShift CLI를 이용하여 jscodeshift -t transformSomeCode.js <target> 와 같은 명령을 실행하면 <target> 에 있는 소스 코드들이 transformSomeCode.js 에 정의된 규칙에 맞게 수정됩니다.이제 본격적으로 JSCodeShift에서 자주 사용되는 메서드들을 살펴보겠습니다.수정할 노드 선택하기: find()기본적으로 수정할 노드를 선택하기 위해 find() 함수를 사용합니다.예를 들어, react 라이브러리의 useMemo 를 가져오는 import 구문들을 선택하기 위해서는 아래와 같이 코드를 작성할 수 있습니다.const nodes = tree.find(\n  /* 찾을 AST 노드 타입 */\n  jscodeshift.ImportDeclaration,\n  /* 필터링할 함수 */\n  node => {\n    return (\n      /* ImportDeclaration 중에서 */\n      node.type === 'ImportDeclaration' &&\n      /* react 라이브러리에서 */\n      node.source.value === 'react' &&\n      /* 가져오는 것 중에서 */\n      node.specifiers.some(specifier => {\n        /* useMemo를 포함하는 것을 */\n        return (\n          specifier.type === 'ImportSpecifier' &&\n          specifier.imported.name === 'useMemo'\n        );\n      })\n      /* 선택한다 */\n    )\n  }\n);노드 삭제하기: remove()선택한 노드를 삭제하기 위해 remove() 함수를 사용합니다.예를 들어서, 아래와 같이 코드를 작성함으로써 선택한 node 의 목록을 삭제할 수 있습니다.for (const node of nodes) {\n  jscodeshift(node).remove();\n}노드를 다른 노드로 치환하기: replaceWith()선택한 노드를 새로운 노드로 치환하려고 할 때 replaceWith() 함수를 사용할 수 있습니다.예를 들어서, 선택한 node 들을 다른 모습으로 치환하기 위해서는 아래와 같이 코드를 작성할 수 있습니다.for (const node of nodes) {\n  /* 노드를 만드는 방법에 대해서 아래에서 더 자세히 다룹니다. */\n  const newNode = createNode();\n\n  jscodeshift(node).replaceWith(newNode);\n}새로운 노드 만들기replaceWith() 와 같은 함수에서 사용하기 위해서 새로운 노드를 만들 때는 JSCodeShift에서 제공하는 도우미 함수들을 사용할 수 있습니다.각 노드를 만드는 방법을 모두 알 필요는 없습니다. TypeScript를 사용하는 경우, 각 함수가 어떤 인자를 받는지 바로 확인할 수 있습니다. JavaScript를 사용하는 경우, ast-types가 정의하는 타입 정보를 참고해주세요.변수 참조: foo와 같은 변수에 참조하는 노드를 만들기 위해서 jscodeshift.identifier() 를 사용할 수 있습니다.jscodeshift.identifier('foo');멤버 접근: 변수 foo의 멤버 bar 에 접근하는 노드를 만들기 위해서 jscodeshift.memberExpression() 을 사용할 수 있습니다.jscodeshift.memberExpression(\n  jscodeshift.identifier('foo'),\n  jscodeshift.identifier('bar')\n);import 문: import { useMemo } from 'react'; 와 같은 import 문을 만들기 위해서 jscodeshift.importDeclaration() 을 사용할 수 있습니다.jscodeShift.importDeclaration(\n  [\n    jscodeShift.importSpecifier(\n      jscodeshift.identifier('useMemo')\n    )\n  ],\n  jscodeshift.literal('react')\n);JSCodeShift 사용 예시토스 프론트엔드 챕터에서는 2020년 import { Adaptive } from '@tossteam/web-development-kits' 와 같은 import 문을 모두 import { adaptive } from '@tossteam/colors' 으로 수정해야 하는 필요성이 있었습니다.이런 경우는 찾아 바꾸기로 해결하는 데에 어려움이 있었습니다. 코드를 수정하는 규칙이 복잡했기 때문입니다.@tossteam/web-development-kits 라이브러리로부터 Adaptive 뿐 아니라 다른 변수나 함수를 import 하는 경우가 있었습니다. 그런 경우에는 전체 import 문을 지우는 것이 아닌, Adaptive 를 가져오는 부분만 삭제해야 했습니다.Adaptive 를 import하는 부분이 삭제된 경우에만 import { adaptive } from '@tossteam/colors'; 와 같이 새로운 import 문을 파일의 가장 처음에 추가해주어야 했습니다. 아닌 경우, 사용하지 않은 변수로 인해 컴파일 시간에 오류가 발생했습니다.Adaptive 를 import하는 부분이 삭제된 경우에만 그 파일에서 사용되는 모든 Adaptive 변수를 adaptive 로 바꿔줘야 했습니다.다행히 토스팀에서는 간단히 이 문제를 JSCodeShift로 해결할 수 있었습니다. 저희가 설계한 JSCodeShift 변환 코드의 구조는 다음과 같습니다.function transformLegacyImportToNewImport(file, { jscodeshift }) {\n  const root = jscodeshift(file.source);\n\n  /* 오래된 import 문들을 찾음 */\n  const oldImports = findOldImports(root, { jscodeshift });\n\n  /* 오래된 import 문이 없는 파일인 경우, 아무 작업을 하지 않음 */\n  if (oldImports.length === 0) {\n    return;\n  }\n\n  for (const oldImport of oldImports) {\n    /* 오래된 import 문에서 Adaptive를 가져오는 부분을 삭제 */\n    /* (Adaptive만을 가져오는 import 문인 경우, import 문 전체를 삭제) */\n    removeImportMember(root, oldImport, 'Adaptive', { jscodeshift });\n  }\n\n  /* @tossteam/colors에서 adaptive를 import하는 부분을 추가 */\n  /* (@tossteam/colors를 import하고 있지 않은 경우, import 문을 추가) */\n  addImportMember(root, '@tossteam/colors', 'adaptive', { jscodeshift });\n\n  /* Adaptive 변수를 모두 adaptive로 치환 */\n  const oldAdaptives = findIdentifiers(root, 'Adaptive', { jscodeshift });\n\n  for (const oldAdaptive of oldAdaptives) {\n    jscodeshift(oldAdaptive).replaceWith(\n      jscodeshift.identifier('adaptive')\n    );\n  }\n\n  /* 수정된 소스코드를 반환 */\n  return root.toSource();\n}\n\n이 중에서 removeImportMember 함수와 같은 경우, 아래와 같이 간단히 구현할 수 있었습니다.function removeImportMember(root, importNode, name, { jscodeshift }) {\n  const oldSpecifiers = importNode.value.specifiers;\n\n  /* name을 import하는 부분을 삭제 */\n  const newSpecifiers = oldSpecifiers.filter(specifier => {\n    return (\n      specifier.type !== 'ImportSpecifier' ||\n      specifier.imported.name !== name\n    );\n  }\n\n  /* 더 이상 import할 것이 남지 않은 경우에는, import 문을 삭제 */\n  if (newSpecifiers.length === 0) {\n    jscodeshift(importNode).remove();\n    return;\n  }\n\n  /* 그렇지 않은 경우, import 문에서 name을 가져오는 부분만 삭제 */\n  jscodeshift(importNode).replaceWith(\n    jscodeshift.importDeclaration(\n      newSpecifiers,\n      importNode.value.source\n    )\n  );\n}다른 함수의 경우에도 유사하게 JSCodeShift API를 이용하여 구현할 수 있었습니다.JSCodeShift 테스트하기JSCodeShift는 작성한 변환 코드가 잘 작동하는지 테스트할 수 있도록 testUtils 라고 하는 이름의 테스트 도구를 제공합니다. 테스트 파일의 디렉토리 구조를 JSCodeShift가 요구하는 대로 맞춰야 하지만, 손쉽게 Jest에 테스트를 붙일 수 있어서 편리합니다.테스트가 잘 붙어 있으면, JSCodeShift 코드의 문제점을 바로바로 찾을 수 있게 됩니다. 개발 속도도 절약되는 만큼, JSCodeShift를 개발할 때는 꼭 테스트와 함께 하는 것을 추천합니다.JSCodeShift 테스트와 관련된 자세한 내용은 JSCodeShift README에서 확인할 수 있습니다.토스팀과 JSCodeShift토스 프론트엔드 개발팀은 짧은 시간동안 빠르게 개발환경을 개선해오면서 대량의 레거시 코드를 최신 라이브러리와 코드 컨벤션에 맞추도록 수정해주어야 했습니다. 경우에 따라서는 작성된지 2년이 지난 오래된 코드가 수만 줄 이상 존재하기도 했습니다.이때 JSCodeShift를 사용함으로써 그런 코드도 한번에 최신 코드와 같이 일관성을 맞출 수 있었습니다. 이번 JSCodeShift 가이드가 레거시 시스템을 다루는 다른 프론트엔드 개발자 분들께 도움이 되었으면 합니다.재미있게 읽으셨나요?좋았는지, 아쉬웠는지, 아래 이모지를 눌러 의견을 들려주세요.😍🤔아티클 공유하기"
+  },
+  {
+    "id": "4",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2021/05/techblog-04-yarn-berry.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "node_modules로부터 우리를 구원해 줄 Yarn Berry",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20210507",
+    "body": "토스 프론트엔드 챕터에서는 지난해부터 의존성을 관리하기 위해 Yarn Berry(v2)를 도입했습니다. 처음에는 일부 레포지토리부터 시작하여, 현재는 대부분의 레포지토리에 Yarn Berry가 적용되어 있는데요. 토스팀이 새로운 패키지 관리 시스템을 도입하게 된 배경과 사용하면서 좋았던 점을 테크 블로그를 통해 공유합니다.Yarn Berry란?Yarn Berry는 Node.js를 위한 새로운 패키지 관리 시스템으로, Yarn v1의 주요 개발자인 Maël Nison 씨가 만들었습니다. 2020년 1월 25일부터 정식 버전(v2)가 출시되어, 현재는 Babel과 같은 큰 오픈소스 레포지토리에서도 채택하고 있습니다. Yarn Berry는 GitHub yarnpkg/berry 레포지토리에서 소스코드가 관리되고 있습니다.Yarn Berry는 기존의 \"깨져 있는\" NPM 패키지 관리 시스템을 혁신적으로 개선합니다.NPM의 문제점NPM은 Node.js 설치 시에 기본으로 제공되어 범용적으로 사용되고 있으나, 비효율적이거나 깨져 있는 부분이 많습니다.비효율적인 의존성 검색NPM은 파일 시스템을 이용하여 의존성을 관리합니다. 익숙한 node_modules 폴더를 이용하는 것이 특징인데요. 이렇게 관리했을 때 의존성 검색은 비효율적으로 동작합니다.예를 들어, /Users/toss/dev/toss-frontend-libraries 폴더에서 require() 문을 이용하여 react 패키지를 불러오는 상황을 가정합시다.라이브러리를 찾기 위해 순회하는 디렉토리의 목록을 확인하려고 할 때, Node.js에서 제공하는 require.resolve.paths() 함수를 사용할 수 있습니다. 이 함수는 NPM이 검색하는 디렉토리의 목록을 반환합니다.$ node\nWelcome to Node.js v12.16.3.\nType \".help\" for more information.\n> require.resolve.paths('react')\n[\n  '/Users/toss/dev/toss-frontend-libraries/repl/node_modules',\n  '/Users/toss/dev/toss-frontend-libraries/node_modules',\n  '/Users/toss/node_modules',\n  '/Users/node_modules',\n  '/node_modules',\n  '/Users/toss/.node_modules',\n  '/Users/toss/.node_libraries',\n  '/Users/toss/.nvm/versions/node/v12.16.3/lib/node',\n  '/Users/toss/.node_modules',\n  '/Users/toss/.node_libraries',\n  '/Users/toss/.nvm/versions/node/v12.16.3/lib/node'\n]\n\n목록에서 확인할 수 있는 것처럼, NPM은 패키지를 찾기 위해서 계속 상위 디렉토리의 node_modules 폴더를 탐색합니다. 따라서 패키지를 바로 찾지 못할수록 readdir, stat과 같은 느린 I/O 호출이 반복됩니다. 경우에 따라서는 I/O 호출이 중간에 실패하기도 합니다.TypeScript 4.0까지는 node_modules를 이용한 패키지 탐색이 너무 비효율적인 나머지, 패키지를 처음으로 import 하기 전까지는 node_modules 내부의 타입 정보를 찾아보지 않기도 했습니다. (TS 4.0 Changelog)환경에 따라 달라지는 동작NPM은 패키지를 찾지 못하면 상위 디렉토리의 node_modules 폴더를 계속 검색합니다. 이 특성 때문에 어떤 의존성을 찾을 수 있는지는 해당 패키지의 상위 디렉토리 환경에 따라 달라집니다.예를 들어, 상위 디렉토리가 어떤 node_modules를 포함하고 있는지에 따라 의존성을 불러올 수 있기도 하고, 없기도 합니다. 다른 버전의 의존성을 잘못 불러올 수 있는 여지도 존재합니다.이렇게 환경에 따라 동작이 변하는 것은 나쁜 징조입니다. 해당 상황을 재현하기 까다로워지기 때문입니다.비효율적인 설치NPM에서 구성하는 node_modules 디렉토리 구조는 매우 큰 공간을 차지합니다. 일반적으로 간단한 CLI 프로젝트도 수백 메가바이트의 node_modules 폴더가 필요합니다. 용량만 많이 차지할 뿐 아니라, 큰 node_modules 디렉토리 구조를 만들기 위해서는 많은 I/O 작업이 필요합니다.node_modules 폴더는 복잡하기 때문에 설치가 유효한지 검증하기 어렵습니다. 예를 들어, 수백 개의 패키지가 서로를 의존하는 복잡한 의존성 트리에서 node_modules 디렉토리 구조는 깊어집니다.이렇게 깊은 트리 구조에서 의존성이 잘 설치되어 있는지 검증하려면 많은 수의 I/O 호출이 필요합니다. 일반적으로 디스크 I/O 호출은 메모리의 자료구조를 다루는 것보다 훨씬 느립니다. 이런 문제로 인해 Yarn v1이나 NPM은 기본적인 의존성 트리의 유효성까지만 검증하고, 각 패키지의 내용이 올바른지는 확인하지 않습니다.유령 의존성 (Phantom Dependency)NPM 및 Yarn v1에서는 중복해서 설치되는 node_modules를 아끼기 위해 끌어올리기(Hoisting) 기법을 사용합니다.예를 들어, 의존성 트리가 왼쪽의 모습을 하고 있다고 가정합시다.왼쪽 트리에서 [A (1.0)]과 [B (1.0)] 패키지는 두 번 설치되므로 디스크 공간을 낭비합니다. NPM과 Yarn v1에서는 디스크 공간을 아끼기 위해 원래 트리의 모양을 오른쪽 트리처럼 바꿉니다.오른쪽 트리로 의존성 트리가 바뀌면서 package-1 에서는 원래 require() 할 수 없었던 [B (1.0)] 라이브러리를 불러올 수 있게 되었습니다.이렇게 끌어올리기에 따라 직접 의존하고 있지 않은 라이브러리를 require() 할 수 있는 현상을 유령 의존성(Phantom Dependency)이라고 부릅니다.유령 의존성 현상이 발생할 때, package.json에 명시하지 않은 라이브러리를 조용히 사용할 수 있게 됩니다. 다른 의존성을 package.json 에서 제거했을 때 소리없이 같이 사라지기도 합니다. 이런 특성은 의존성 관리 시스템을 혼란스럽게 만듭니다.Plug'n'Play (PnP)Yarn Berry는 위에서 언급한 문제를 새로운 Plug'n'Play 전략을 이용하여 해결합니다.Plug'n'Play의 배경Yarn v1은 package.json 파일을 기반으로 의존성 트리를 생성하고, 디스크에 node_modules 디렉토리 구조를 만듭니다. 이미 패키지의 의존성 구조를 완전히 알고 있는 것입니다.node_modules 파일 시스템을 이용한 의존성 관리는 깨지기 쉽습니다. 모든 패키지 매니저가 실수하기 쉬운 Node 내장 의존성 관리 시스템을 사용해야 할까요? 패키지 매니저들이 node_modules 디렉토리 구조를 만드는 것에 그치지 않고, 보다 근본적으로 안전하게 의존성을 관리하면 어떨까요?Plug'n'Play는 이런 생각에서 출발했습니다.Plug'n'Play 켜기NPM에서 최신 버전의 Yarn을 내려받고, 버전을 Berry로 설정하면 Yarn Berry를 사용할 수 있습니다.$ npm install -g yarn\n$ cd ../path/to/some-package\n$ yarn set version berryYarn Berry는 기존 Node.js 의존성 관리 시스템과 많이 다르기 때문에 하위호환을 위해 패키지 단위로만 도입할 수 있습니다.Plug'n'Play의 동작 방법Plug'n'Play 설치 모드에서 yarn install 로 의존성을 설치했을 때, 기존과 다른 모습을 볼 수 있습니다.Yarn Berry는 node_modules를 생성하지 않습니다. 대신 .yarn/cache 폴더에 의존성의 정보가 저장되고, .pnp.cjs 파일에 의존성을 찾을 수 있는 정보가 기록됩니다. .pnp.cjs를 이용하면 디스크 I/O 없이 어떤 패키지가 어떤 라이브러리에 의존하는지, 각 라이브러리는 어디에 위치하는지를 바로 알 수 있습니다.예를 들어, react 패키지는 .pnp.cjs 파일에서 다음과 같이 나타납니다./* react 패키지 중에서 */\n[\"react\", [\n  /* npm:17.0.1 버전은 */\n  [\"npm:17.0.1\", {\n    /* 이 위치에 있고 */\n    \"packageLocation\": \"./.yarn/cache/react-npm-17.0.1-98658812fc-a76d86ec97.zip/node_modules/react/\",\n    /* 이 의존성들을 참조한다. */\n    \"packageDependencies\": [\n      [\"loose-envify\", \"npm:1.4.0\"],\n      [\"object-assign\", \"npm:4.1.1\"]\n    ],\n  }]\n]],\n\nreact 17.0.1 버전 패키지의 위치와 의존성의 목록을 완전하게 기술하고 있는 것을 확인할 수 있습니다. 이로부터 특정 패키지와 의존성에 대한 정보가 필요할 때 바로 알 수 있습니다.Yarn은 Node.js가 제공하는 require() 문의 동작을 덮어씀으로써 효율적으로 패키지를 찾을 수 있도록 합니다. 이 때문에 PnP API를 이용하여 의존성 관리를 하고 있을 때에는 node 명령어 대신 yarn node 명령어를 사용해야 합니다.$ yarn node일반적으로 Node.js 앱을 실행할 때에는 package.json의 scripts 에 실행 스크립트를 등록하여 사용하게 됩니다. 이때 Yarn v1에서 사용하던 것처럼 Yarn으로 스크립트를 실행하기만 하면 자동으로 PnP로 의존성을 불러옵니다.$ yarn devZipFS (Zip Filesystem)zip으로 묶인 라이브러리가 저장된 .yarn/cache 폴더Yarn PnP 시스템에서 각 의존성은 Zip 아카이브로 관리됩니다. 예를 들어, Recoil 0.1.2 버전은 recoil-npm-0.1.2-9a0edbd2b9-c69105dd7d.zip과 같은 압축 파일로 관리됩니다.이후 .pnp.cjs 파일이 지정하는 바에 따라 동적으로 Zip 아카이브의 내용이 참조됩니다.Zip 아카이브로 의존성을 관리하면 다음과 같은 장점이 생깁니다.더 이상 node_modules 디렉토리 구조를 생성할 필요가 없기 때문에 설치가 신속히 완료됩니다.각 패키지는 버전마다 하나의 Zip 아카이브만을 가지기 때문에 중복해서 설치되지 않습니다. 각 Zip 아카이브가 압축되어 있음을 고려할 때, 스토리지 용량을 크게 아낄 수 있습니다.실제로 토스팀에서 의존성이 차지하는 크기를 대폭 감축할 수 있었습니다.한 서비스의 경우 NPM을 이용했을 때 node_modules 디렉토리가 약 400MB를 차지했지만, Yarn PnP를 사용했을 때 의존성 디렉토리의 크기는 120MB에 불과했습니다.의존성을 구성하는 파일의 수가 많지 않으므로, 변경 사항을 감지하거나 전체 의존성을 삭제하는 작업이 빠릅니다.없는 의존성이나 더 이상 필요 없는 의존성을 쉽게 찾을 수 있습니다.Zip 파일의 내용이 변경되었을 때에는 체크섬과 비교하여 쉽게 변경 여부를 감지할 수 있습니다.Plug'n'Play 도입 결과토스 프론트엔드 챕터가 Plug'n'Play를 도입한 결과, 다양한 장점을 느낄 수 있었습니다.의존성을 검색할 때의존성을 검색할 때, 더 이상 node_modules 폴더를 순회할 필요가 없습니다. .pnp.cjs 파일이 제공하는 자료구조를 이용하여 바로 의존성의 위치를 찾기 때문입니다. 이로써 require()에 걸리는 시간이 크게 단축되었습니다.재현 가능성패키지의 모든 의존성은 .pnp.cjs 파일을 이용하여 관리되기 때문에 더 이상 외부 환경에 영향받지 않습니다. 이로써 다양한 기기 및 CI 환경에서 require() 또는 import 문의 동작이 동일할 것임을 보장할 수 있게 되었습니다.의존성을 설치할 때더 이상 설치를 위해 깊은 node_modules 디렉토리를 생성하지 않아도 됩니다. 또 NPM이 설치하는 것처럼 같은 버전의 패키지가 여러 번 복사되어 설치 시간을 극단적으로 단축할 수 있습니다. 이에 더해 Zero-install을 사용하면 대부분 라이브러리를 설치 없이 사용할 수 있습니다.이를 이용하면 CI와 같이 반복적으로 의존성 설치 작업이 이루어지는 곳에서 시간을 크게 절약할 수 있습니다. 토스팀에서는 원래 CI에서 60초씩 걸리던 설치 작업을 Yarn PnP를 도입함으로써 수 초 이내로 단축했습니다.엄격한 의존성 관리Yarn PnP는 node_modules에서와 같이 의존성을 끌어올리지 않습니다. 이로써 각 패키지들은 자신이 package.json에 기술하는 의존성에만 접근할 수 있습니다. 기존에 환경에 따라 우연히 작동할 수 있었던 코드들이 보다 엄격히 관리되는 것입니다. 이로써 예기치 못한 버그를 쉽게 일으키던 유령 의존성 현상을 근본적으로 막을 수 있었습니다.의존성 검증node_modules를 사용하여 의존성을 관리했을 때에는 올바르게 의존성이 설치되지 못해서 의존성 폴더 전체를 지우고 다시 설치해야 하는 경우가 발생하고는 했습니다. node_modules 폴더를 검증하기 어려웠기 때문입니다. 전체 재설치를 수행할 때 node_modules 디렉토리 구조를 다시 만드느라 1분 이상의 시간이 허비되기도 했습니다.Yarn PnP에서는 Zip 파일을 이용하여 패키지를 관리하기 때문에 빠진 의존성을 찾거나 의존성 파일이 변경되었음을 찾기 쉽습니다. 이로써 의존성이 잘못되었을 때 쉽게 바로잡을 수 있습니다. 이로써 올바르게 의존성이 설치되는 것을 100%에 가깝게 보장할 수 있습니다.Zero-Install위에서 Yarn Berry의 PnP를 도입함으로써 얻을 수 있는 다양한 장점들을 살펴보았습니다. 여기에서 한 발 더 나아간 생각을 해 볼 수 있습니다. 바로 의존성도 Git 등을 이용하여 버전 관리를 하면 어떨까? 라고 하는 생각인데요.Yarn PnP은 의존성을 압축 파일로 관리하기 때문에 의존성의 용량이 작습니다. 또한 각 의존성은 하나의 Zip 파일로만 표현되기 때문에 의존성을 구성하는 파일의 숫자가 NPM만큼 많지 않습니다. 예를 들어, 일반적인 node_modules 는 1.2GB 크기이고 13만 5천개의 파일로 구성되어 있는 반면, Yarn PnP의 의존성은 139MB 크기의 2천개의 압축 파일로 구성됩니다.이처럼 용량과 파일의 숫자가 적기 때문에 Yarn Berry를 사용하면 의존성을 Git으로 관리할 수 있습니다. 그리고 이렇게 의존성의 버전을 관리할 때 더욱 큰 장점들을 발견할 수 있습니다.이렇게 Yarn Berry에서 의존성을 버전 관리에 포함하는 것을 Zero-Install이라고 합니다.Yarn Berry Git 레포지토리에서 사용하는 Zero-install의존성을 버전 관리에 포함하면 많은 장점들이 생깁니다.새로 저장소를 복제하거나 브랜치를 바꾸었다고 해서 yarn install을 실행하지 않아도 됩니다. 일반적으로 다른 의존성을 사용하는 곳으로 브랜치를 변경했을 때, 잊지 않고 의존성을 설치해주어야 했습니다. 경우에 따라서는 잘못된 의존성 버전이 사용됨으로써 웹 서비스가 알 수 없는 이유로 오동작하기도 했습니다. Zero-Install을 사용했을 때 이런 문제는 완전히 해결됩니다. 더해서 네트워크가 끊어진 곳에서는 오프라인 캐시 기능을 해주기도 합니다.CI에서 의존성 설치하는 시간을 크게 절약할 수 있습니다. 토스에서는 일반적으로 캐시가 존재하지 않을 때 의존성을 설치하기 위해서 60초~90초의 시간이 필요했습니다. Zero-Install을 사용하면 Git Clone으로 저장소를 복제했을 때 의존성들이 바로 사용 가능한 상태가 되어, 의존성을 설치할 필요가 없습니다. 이로써 CI 시간을 크게 절약할 수 있었습니다.토스 프론트엔드 챕터에서는 Zero-install 기능을 적극적으로 레포지토리에 도입함으로써 빌드와 배포 시간을 크게 단축할 수 있었습니다.그 외 Yarn Berry에서 좋았던 점이 외에 Yarn Berry는 다양한 개발자 친화적인 기능을 제공합니다.플러그인 시스템: Yarn Berry는 핵심 기능도 플러그인을 이용하여 개발되어 있을 만큼 플러그인 친화적인 환경을 자랑합니다. 필요한 만큼 Yarn의 기능을 확장하여 손쉽게 CLI로 사용할 수 있습니다.토스 프론트엔드 챕터에서는 이현섭님께서 변경된 워크스페이스를 계산하는 플러그인을 며칠만에 만들어주시기도 하셨습니다. 이처럼 Yarn Berry의 기능이 부족하다면 손쉽게 플러그인을 만들 수 있습니다.워크스페이스: Yarn Berry는 Yarn v1와 비교할 수 없을 정도로 높은 완성도의 워크스페이스 기능을 제공합니다. Yarn Berry의 Git 레포지토리에서 대표적으로 사용하는 모습을 확인할 수 있습니다. TypeScript를 사용함에도 한 패키지의 소스 코드의 변경사항이 즉시 다른 패키지에 반영되는 모습이 인상적입니다.토스 프론트엔드 챕터에서도 적극적으로 워크스페이스 기능을 사용하고 있습니다.패치 명령어 기본 지원: 경우에 따라서 NPM에 배포된 라이브러리의 일부분만 수정해서 사용하고 싶은 니즈가 있습니다. Yarn Berry는 yarn patch 명령어를 제공함으로써 쉽게 라이브러리의 일부분을 수정해서 사용할 수 있도록 합니다. 이렇게 만든 패치 파일은 patch: 프로토콜을 이용해서 쉽게 의존성 설치에 사용할 수 있습니다.토스팀은 이렇게 Yarn Berry를 도입함으로써 JavaScript 의존성을 효율적이고 안전하게 다룰 수 있었습니다. 오래 걸리던 CI 속도를 60초 이상 단축하기도 했습니다.다음 Yarn Berry 아티클에서는 실제로 거대한 서비스 모노레포를 Yarn Berry로 이전한 경험을 소개드리면서 실사용에서 주의할 점에 대해 보다 자세히 소개드리겠습니다.재미있게 읽으셨나요?좋았는지, 아쉬웠는지, 아래 이모지를 눌러 의견을 들려주세요.😍🤔아티클 공유하기"
+  },
+  {
+    "id": "5",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2021/05/techblog-05-template-literal.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "Template Literal Types로 타입 안전하게 코딩하기",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20210514",
+    "body": "2020년 11월 TypeScript 4.1이 출시되면서 \"Template Literal Type\"을 사용할 수 있게 되었습니다. TypeScript로 JSON Parser를 만들거나, document.querySelector 의 결과 타입을 추론할 수 있게 되어 화제가 되었는데요. 이번 아티클에서는 Template Literal Type이란 무엇인지, 이를 바탕으로 어떻게 그런 결과물을 만들 수 있었는지 간단히 예시로 소개드리고자 합니다.Template Literal Type이란?간단히 말해, Template Literal Type이란 기존 TypeScript의 String Literal Type을 기반으로 새로운 타입을 만드는 도구입니다. 구체적인 예시로 Template Literal Type에 대해 자세히 살펴보겠습니다.예시 1: 가장 간단한 형태type Toss = 'toss';\n\n// type TossPayments = 'toss payments';\ntype TossPayments = `${Toss} payments`;TypeScript Playground가장 간단한 형태로, 원래 있던 'toss' 라고 하는 타입을 바탕으로 'toss payments' 라고 하는 타입을 만드는 경우를 생각할 수 있습니다.TypeScript 4.1 이전에는 이런 문자열 작업이 불가능했지만, Template Literal Type을 이용함으로써 보다 넓은 타입 연산이 가능해졌습니다.예시 2: 하나의 Union Typetype Toss = 'toss';\ntype Companies = 'core' | 'bank' | 'securities' | 'payments' | 'insurance';\n\n// type TossCompanies = 'toss core' | 'toss bank' | 'toss securities' | ...;\ntype TossCompanies = `${Toss} ${Companies}`TypeScript PlaygroundTemplate Literal Type을 Union type(합 타입)과 함께하면, 결과물도 Union Type이 됩니다.예를 들어, 위 예시에서 'toss' 타입과 'core' | 'bank' | 'securities' | ... 타입을 Template Literal Type으로 연결하면 'toss core' | 'toss bank' | 'toss securities' | ... 와 같이 확장되는 것을 확인할 수 있습니다.예시 3: 여러 개의 Union Typetype VerticalAlignment = \"top\" | \"middle\" | \"bottom\";\ntype HorizontalAlignment = \"left\" | \"center\" | \"right\";\n\n// type Alignment =\n//   | \"top-left\"    | \"top-center\"    | \"top-right\"\n//   | \"middle-left\" | \"middle-center\" | \"middle-right\"\n//   | \"bottom-left\" | \"bottom-center\" | \"bottom-right\"\ntype Alignment = `${VerticalAlignment}-${HorizontalAlignment}`;TypeScript Playground여러 개의 Union Type을 연결할 수도 있습니다.예를 들어, 위에서는 VerticalAlignment 타입과 HorizontalAlignment 타입을 연결하여, ${VerticalAlignment}-${HorizontalAlignment} 타입을 만들었습니다.원래라면 중복해서 Alignment 타입을 다시 정의해야 했겠지만, Template Literal Type을 사용함으로써 중복 없이 더욱 간결히 타입을 표현할 수 있게 되었습니다.예시 4: 반복되는 타입 정의 없애기문제 상황// 이벤트 이름이 하나 추가될 때마다....\ntype EventNames = 'click' | 'doubleClick' | 'mouseDown' | 'mouseUp';\n\ntype MyElement = {\n    addEventListener(eventName: EventNames, handler: (e: Event) => void): void;\n\n    // onEvent() 도 하나씩 추가해줘야 한다\n    onClick(e: Event): void;\n    onDoubleClick(e: Event): void;\n    onMouseDown(e: Event): void;\n    onMouseUp(e: Event): void;\n};이벤트에 대한 핸들러를 등록할 때, addEventListener('event', handler) 와 onEvent = handler 의 두 가지 형식을 모두 사용할 수 있는 MyElement 타입을 생각해봅시다.// 두 가지 방법 모두 사용할 수 있는 경우\nelement.addEventListener('click', () => alert('I am clicked!'));\nelement.onClick = () => alert('I am clicked!');예를 들어, click 이벤트를 구독할 때, 위의 두 가지 방법을 모두 사용할 수 있는 것입니다.요소에 추가할 수 있는 이벤트의 종류는 자주 변경되고는 합니다. 예를 들어, 브라우저 API가 바뀌면서 'pointerDown' 과 같은 이벤트가 새로 추가될 수 있습니다.이런 경우, TypeScript 4.1 이전에는 매번 수동으로 여러 곳의 타입을 수정해야 했습니다. 우선 addEventListener의 인자로 사용되는 이벤트 이름 EventNames 타입에 'pointerDown' 을 넣어야 했습니다. 또 onPointerDown 메서드를 명시해야 했습니다. 잊지 않고 두 곳을 수정해야 했기 때문에, 실수하기 쉬웠습니다.하지만 Template Literal Type을 이용하면 한 곳만 수정해도 모두에 반영되도록 할 수 있습니다.type EventNames = 'click' | 'doubleClick' | 'mouseDown' | 'mouseUp';\n\n// CapitalizedEventNames = 'Click' | 'DoubleClick' | ...;\ntype CapitalizedEventNames = Capitalize<EventNames>;\n\n// type HandlerNames = 'onClick' | 'onDoubleClick' | 'onMouseDown' | 'onMouseUp';\ntype HandlerNames = `on${CapitalizedEventNames}`;\n\ntype Handlers = {\n  [H in HandlerNames]: (event: Event) => void;\n};\n\n// 원래 MyElement 그대로 작동!\ntype MyElement = Handlers & {\n  addEventListener: (eventName: EventNames, handler: (event: Event) => void) => void;\n};위 코드를 한번 자세히 살펴봅시다.CapitalizedEventNames 타입을 정의할 때, TypeScript 4.1에서 추가된 Capitalize<T> 타입을 이용하여 EventNames의 첫 글자를 대문자로 만들었습니다.HandlerNames 타입을 만들 때, Template Literal Type으로 onClick 과 같이 on 접두사를 붙였습니다.Handlers 타입에서는 기존의 onClick, onMouseDown 과 같은 이벤트 핸들러를 메서드로 가지도록 했고,마지막으로 MyElement 에서는 addEventListener 메서드를 가지는 객체와 연결하여 원래와 동일한 동작을 하는 타입을 만들 수 있었습니다.이제 EventNames 만 수정하면 MyElement 에서 이벤트를 구독하는 양쪽 모두 대응이 되므로, 코드가 깔끔해지고 실수의 여지가 적어졌습니다. ✨Conditional Type과 더 강력한 추론하기Template Literal Type은 Conditional Type과 함께 더욱 강력하게 사용할 수 있습니다.Conditional Type 되짚어보기Conditional Type은 JavaScript의 삼항 연산자와 비슷하게 분기를 수행하면서, 타입을 추론하는 방법인데요. 고급 TypeScript 사용에서 강력한 타입 연산을 하기 위해서 빠지지 않습니다.Template Literal Type을 더 잘 다루기 위해 반드시 필요한 개념이므로, 간단한 예시로 Conditional Type을 사용하는 방법에 대해 살펴보겠습니다.예시 1: 제네릭 타입 인자 꺼내오기Conditional Type을 가장 자주 사용하는 경우로,  Promise<number>와 같은 타입에서 number 를 꺼내오고 싶은 상황을 생각해봅시다.type PromiseType<T> = T extends Promise<infer U> ? U : never;\n\n// type A = number\ntype A = PromiseType<Promise<number>>;\n\n// type B = string | boolean\ntype B = PromiseType<Promise<string | boolean>>;\n\n// type C = never\ntype C = PromiseType<number>;TypeScript Playground위 코드를 살펴보면, PromiseType<T> 타입에 Promise<number> 타입을 인자로 넘기면 number 타입을 얻고 있습니다.Conditional Type이 동작하는 방식을 간단히 알아봅시다.삼항 연산자처럼 생긴 부분 가운데 X extends Y 와 같이 생긴 조건 부분은 X 타입의 변수가 Y 타입에 할당될 수 있는지에 따라 참값이 평가됩니다.예시:true extends boolean: true 는 boolean 에 할당될 수 있으므로 참으로 평가됩니다.'toss' extends string: 'toss' 는 string 에 할당될 수 있으므로 참으로 평가됩니다.Array<{ foo: string }> extends Array<unknown>: 마찬가지로 참으로 평가됩니다.string extends number: 문자열은 숫자 타입에 할당될 수 없으므로 거짓입니다.boolean extends true: boolean 타입 가운데 false 는 true 에 할당될 수 없으므로 거짓입니다.조건식이 참으로 평가될 때에는 infer 키워드를 사용할 수 있습니다. 예를 들어, Promise<number> extends Promise<infer U> 와 같은 타입을 작성하면, U 타입은 number 타입으로 추론됩니다. 이후 참인 경우에 대응되는 식에서 추론된 U 타입을 사용할 수 있습니다.예를 들어, Promise<number> extends Promise<infer U> ? U : never 에서는 조건식이 참이고 U 타입이 number로 추론되므로, 이를 평가한 타입의 결과는 number 가 됩니다.반대로 number extends Promise<infer U> ? U : never 에서는 조건식이 거짓이므로 이를 평가한 결과는 never가 됩니다.예시 2: Tuple 다루기[string, number, boolean] 과 같은 TypeScript의 Tuple Type에서 그 꼬리 부분인 [number, boolean] 과 같은 부분만 가져오고 싶은 상황을 생각해봅시다.Conditional Type과 Variadic Tuple Type을 활용함으로써 이를 간단히 구현할 수 있습니다.type TailOf<T> = T extends [unknown, ...infer U] ? U : [];\n\n// type A = [boolean, number];\ntype A = TailOf<[string, boolean, number]>;TypeScript Playground첫 요소를 제외하고 ...infer U 구문을 이용하여 뒤의 요소들을 모두 선택한 것을 확인할 수 있습니다.이 외에 간단한 형태로 특정한 튜플이 비어 있는지 검사하기 위해서, 아래와 같은 IsEmpty<T> 타입을 정의할 수도 있습니다.type IsEmpty<T extends any[]> = T extends [] ? true : false;\n\n// type B = true\ntype B = IsEmpty<[]>;\n\n// type C = false\ntype C = IsEmpty<[number, string]>;TypeScript PlaygroundConditional Type에 대해 더 궁금하신 분은 TypeScript 공식 문서를 참고하시기 바랍니다.이제 Conditional Type과 Template Literal Type을 함께 사용했을 때 어떤 결과를 얻을 수 있는지 살펴봅시다.초급 예시 1: 간단한 추론type InOrOut<T> = T extends `fade${infer R}` ? R : never;\n\n// type I = \"In\"\ntype I = InOrOut<\"fadeIn\">;\n// type O = \"Out\"\ntype O = InOrOut<\"fadeOut\">;가장 간단한 예시로, 'fadeIn' | 'fadeOut' 과 같은 타입에서 앞의 fade 접두사를 버리고 'In' | 'Out' 만 가져오고 싶은 상황을 생각해봅시다.Promise<number> 에서 number 를 가져오는 것과 유사하게, Conditional Type을 이용하여 접두사를 제외할 수 있습니다.중급 예시 1: 문자열에서 공백 없애기위의 예시를 응용하면 문자열의 공백을 없애는 타입을 정의할 수 있습니다. 예를 들어, 아래와 같이 오른쪽의 공백을 모두 제거한 타입을 만들 수 있습니다.// type T = \"Toss\"\ntype T = TrimRight<\"Toss      \">;TrimRight<T> 타입은 재귀적 타입 선언을 활용합니다.type TrimRight<T extends string> =\n  T extends `${infer R} `\n    ? TrimRight<R>\n    : T;TypeScript Playground위 코드를 살펴보시면, infer R 문 뒤에 하나의 공백이 있는 것을 확인하실 수 있습니다.즉, T 타입의 오른쪽에 공백이 하나 있다면, 공백을 하나 빠뜨린 것을 R 타입으로 추론하고, 다시 TrimRight<R> 을 호출합니다.만약 공백이 더 이상 존재하지 않는다면, 원래 주어진 타입 그대로를 반환합니다.TypeScript에는 if 문이 존재하지 않지만, 만약 존재한다고 가정했을 때 아래와 같이 작성해볼 수 있습니다.type TrimRight<T extends string> =\n  if (T extends `${infer R} `) {\n    return TrimRight<R>;\n  } else {\n    return T;\n  }보다 재귀적인 구조를 잘 확인할 수 있습니다.중급 예시 2: 점으로 연결된 문자열 Split하기재귀적 타입 정의를 활용하면 'foo.bar.baz' 와 같은 타입을 ['foo', 'bar', 'baz'] 로 나누는 타입을 정의할 수 있습니다.type Split<S extends string> =\n  S extends `${infer T}.${infer U}`\n    ? [T, ...Split<U>]\n    : [S];\n\n// type S = [\"foo\", \"bar\", \"baz\"];\ntype S = Split<\"foo.bar.baz\">;TypeScript Playground주어진 S 타입에서 첫번째 점(.) 을 찾고, 그 앞 부분을 T, 뒷 부분을 U 로 추론합니다. 이후 이를 [T, ...Split<U>]와 같이 재귀적으로 하나씩 값을 이어 나가면서 원하는 결과 타입을 만들어 나갑니다.이 경우에도 if 문이 있다는 가정 하에 pseudo-code로 정리해볼 수 있습니다.type Split<S extends string> =\n  if (S extends `${infer T}.${infer U}`) {\n    return [T, ...Split<infer U>];\n  } else {\n    return [S];\n  }고급 예시: lodash.set() 함수 타입 추론하기lodash.set()는 아래와 같이 문자열로 된 접근자를 이용하여 객체의 깊은 프로퍼티까지 수정할 수 있는 함수입니다.const someObject = {\n  toss: {\n    core: {\n      client: {\n        platform: \"foo\"\n      }\n    }\n  }\n};\n\n// OK!\nlodashSet(someObject, \"toss.core.client\", { platform: 'bar' });\n\n// Error: 'bar' is not assignable to type '{ platform: string }';\nlodashSet(someObject, 'toss.core.client', 'bar');Template Literal Type이 있기 전, 이런 함수는 타입 안전하게 사용할 수 없어 세 번째 인자를 any 로 규정해야 했습니다. 그러나 위에서 살펴본 타입 정의를 조합하면 lodash.set() 를 더욱 안전하게 타이핑할 수 있습니다. 💯lodash.set() 함수를 정확하게 타이핑하기 위해서는 아래의 ValueOf<T, P> 타입이 필요합니다. ValueOf<T, P> 타입은 객체 T 와 접근 경로 P가 주어졌을 때, T 를 P 경로로 순서대로 접근했을 때 결과로 나오는 타입을 나타냅니다.interface Foo {\n  foo: {\n    bar: {\n      baz: string;\n    }\n  }\n}\n\n// type A = { bar: { baz: string } };\ntype A = ValueOf<Foo, ['foo']>;\n\n// type B = { baz: string };\ntype B = ValueOf<Foo, ['foo', 'bar']>;\n\n// type C = string;\ntype C = ValueOf<Foo, ['foo', 'bar', 'baz']>;만약에 위와 같은 ValueOf<T, P> 이 있다면, 위에서 만들었던 Split<S> 과 조합하여 쉽게 lodash.set() 함수에 타입을 부여할 수 있을 것입니다.function lodashSet<Type, Path>(\n  obj: Type,\n  path: Path,\n  value: ValueOf<Type, Split<Path>>\n): void;이제 ValueOf<T, P> 타입을 만들어봅시다. if 문과 내부 타입 선언이 있는 pseudo-code로 나타낸다면, 아래와 같이 코드를 작성할 수 있습니다.type ValueOf<Type, Paths> =\n  type Head = Paths[0];\n  type Tail = TailOf<Paths>;\n\n  if (/* Tail의 길이가 0이다 */) {\n    return Type[Head];\n  } else {\n    return ValueOf<Type[Head], Tail>;\n  }ValueOf<T, P> 타입이 그렇게 동작한다면, 위의 Foo 예시에서는 아래와 같이 차례대로 값이 계산될 것입니다.ValueOf<Foo, ['foo', 'bar']>\n== ValueOf<Foo['foo'], ['bar']>\n== ValueOf<Foo['foo']['bar'], []>\n== Foo['foo']['bar']작성했던 의사 코드를 유효한 TypeScript 코드로 나타내면 다음과 같습니다.type ValueOf<Type, Paths extends any[]> =\n  /*\n   * IsEmpty<TailOf<Paths>>가 참이면\n   * == TailOf<Paths>가 빈 Tuple이면\n   */\n  IsEmpty<TailOf<Paths>> extends true\n    ? Type[HeadOf<Paths>]\n    : ValueOf<Type[HeadOf<Paths>], TailOf<Paths>>;위 내용을 모두 조합하면 lodash.set()을 안전하게 다룰 수 있는데요. 실제로 동작하는 방식을 TypeScript Playground에서 확인해보실 수 있습니다. 😉Template Literal Type의 응용위에서 살펴본 바와 같이, Template Literal Type을 Conditional Type과 사용하면 더욱 많은 코드를 안전하게 사용할 수 있습니다. awesome-template-literal-types 레포지토리에는 상상력을 자극하는 Template Literal Type의 사용 예시들이 모여 있습니다.대표적으로 화제가 되었던 예시들에 대한 링크를 남기고 글을 맺습니다.1. TypeScript로 JSON 파서 만들기// type Json = { key1: ['value1', null]; key2: 'value2' };\ntype Json = ParseJson<'{ \"key1\": [\"value1\", null], \"key2\": \"value2\" }'>;코드와 같이 JSON 문자열을 바로 TypeScript 타입으로 옮길 수 있다는 Proof-of-concept로 화제가 되었습니다.2. document.querySelector를 타입 안전하게 사용하기const a = querySelector('div.banner > a.call-to-action'); //-> HTMLAnchorElement\nconst b = querySelector('input, div'); //-> HTMLInputElement | HTMLDivElement\nconst c = querySelector('circle[cx=\"150\"]') //-> SVGCircleElement\nconst d = querySelector('button#buy-now'); //-> HTMLButtonElement\nconst e = querySelector('section p:first-of-type'); //-> HTMLParagraphElementa 태그를 선택했을 때 결괏값이 HTMLAnchorElement가 되는 것을 확인하실 수 있습니다.3. Express의 Route Parameter로부터 타입 추론하기Express에서 사용하는 경로 문자열에서 Route Parameter의 타입을 추론할 수 있습니다.재미있게 읽으셨나요?좋았는지, 아쉬웠는지, 아래 이모지를 눌러 의견을 들려주세요.😍🤔아티클 공유하기"
+  },
+  {
+    "id": "6",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2021/10/techblog-06-agility.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "개발자의 애질리티",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20211014",
+    "body": "이 글은 토스페이먼츠에 입사하신, 혹은 입사를 고려 중인 개발자분들을 위해 작성된 글입니다. 애자일하게 일한다는 것은 어떠한 의미일까요?"
+  },
+  {
+    "id": "7",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2022/02/techblog-07-jam-stack.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "조금만 신경써서 초기 렌더링 빠르게 하기 (feat. JAM Stack)",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20220209",
+    "body": "SPA(Single Page Application) 구조로 웹 프론트엔드 애플리케이션이 개발되면서 초기 렌더링 속도는 프런트엔드 개발자에게 중요한 과제 중 하나가 되었습니다. 사용자 경험에 영향을 줄 수 있는 가장 큰 요소 중 하나가 바로 속도이기 때문입니다."
+  },
+  {
+    "id": "8",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2022/04/techblog-08-rest-docs.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "Kotlin으로 DSL 만들기: 반복적이고 지루한 REST Docs 벗어나기",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20220411",
+    "body": "토스페이먼츠에서는 API docs를 REST Docs를 사용해서 작성할 수 있도록 권장하고 있습니다. 이 글에서는 DSL을 통해서 반복적인 REST Docs 테스트 코드 작성을 줄일 수 있는 방법을 알아봅니다."
+  },
+  {
+    "id": "9",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2022/04/techblog-08-rest-docs.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "에러 핸들링을 다른 클래스에게 위임하기 (Kotlin 100% 활용)",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20220514",
+    "body": "Kotlin의 Result로 MSA에서 에러가 전파되지 않는 안전한 환경을 만드는 방법을 알아봅니다."
+  },
+  {
+    "id": "10",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2022/06/techblog-10-test-code.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "에러 핸들링을 다른 클래스에게 위임하기 (Kotlin 100% 활용)",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20220609",
+    "body": "Kotlin의 Result로 MSA에서 에러가 전파되지 않는 안전한 환경을 만드는 방법을 알아봅니다."
+  },
+  {
+    "id": "11",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2022/10/techblog-11-node-js.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "CommonJS와 ESM에 모두 대응하는 라이브러리 개발하기: exports field",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20221004",
+    "body": "Node.js에는 두 가지 Module System이 존재합니다. 토스 프론트엔드 챕터에서 운영하는 100개가 넘는 라이브러리들은 그것에 어떻게 대응하고 있을까요?"
+  },
+  {
+    "id": "12",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2022/10/tech_M.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "CommonJS와 ESM에 모두 대응하는 라이브러리 개발하기: exports field",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20221025",
+    "body": "이 글은 토스증권 QA Team에 입사를 고려 중인 지원자들을 위해 작성된 글입니다. 토스증권 QA Manager 하는 역할과 일하는 방식은 어떻게 다를까요?"
+  },
+  {
+    "id": "13",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2022/10/tech-article-ts.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "TypeScript 타입 시스템 뜯어보기: 타입 호환성",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20221026",
+    "body": "타입호환성은 무엇이며 왜 필요할까요? 타입호환이 지원되지 않는 경우가 존재한다는 것을 아셨나요? 평소 익숙했던 개념들에 대해 질문을 던져가며 TypeScript 타입 시스템에 관해 심도있게 알아보고자 합니다."
+  },
+  {
+    "id": "14",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2022/11/tech-article-nest-js-02.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "NestJS 환경에 맞는 Custom Decorator 만들기",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20221122",
+    "body": "NestJS에서 데코레이터를 만들기 위해서는 NestJS의 DI와 메타 프로그래밍 환경 등을 고려해야 합니다. 어떻게 하면 이러한 NestJS 환경에 맞는 데코레이터를 만들 수 있을지 고민해보았습니다."
+  },
+  {
+    "id": "15",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2022/12/01-1.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "토스증권 QA 문화 ‘통합테스트’를 아시나요? (feat. 해외주식)",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20221212",
+    "body": "토스증권 해외주식 출시 전에 사내 임직원 대상으로 진행한 ‘통합테스트’에 대해 소개합니다. 통합테스트 진행 방식을 참고하여 간단한 규칙과 사용자 시나리오를 활용해 사용자의 반응을 미리 확인해 보세요."
+  },
+  {
+    "id": "16",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2023/01/js_center.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "똑똑하게 브라우저 Polyfill 관리하기",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20230121",
+    "body": "현대적인 JavaScript를 쓰면서도 넓은 범위의 기기를 지원하기 위한 Polyfill을 어떻게 똑똑하게 설정할 수 있는지 소개합니다."
+  },
+  {
+    "id": "17",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2023/03/declarative.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "선언적인 코드 작성하기",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20230316",
+    "body": "선언적인 코드, 토스 프론트엔드 챕터는 어떻게 생각을 하고 있을까요?"
+  },
+  {
+    "id": "18",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2023/03/00017-3291509353.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "tosspayments-restdocs: 선언형 문서 작성 라이브러리",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20230322",
+    "body": "REST Docs 를 최소한의 코드로 작성하면서 변화에도 더 유연하게 대처할 수 있는 tosspayments-restdocs 라이브러리와, 라이브러리에 녹인 기술들을 소개합니다."
+  },
+  {
+    "id": "19",
+    "imageUrl": "https://wp.toss.tech/wp-content/uploads/2023/03/center.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "ESLint와 AST로 코드 퀄리티 높이기",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20230331",
+    "body": "ESLint와 AST로 토스에서 코드 퀄리티를 높인 방법에 대해 소개드려요."
+  },
+  {
+    "id": "20",
+    "imageUrl": "https://static.toss.im/illusts-content/img-tech-cover.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "Spring Boot Actuator의 헬스체크 살펴보기",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20230401",
+    "body": "서버의 상태를 알려주는 헬스 체크에 대해 알고 계시나요? 단순히 200 OK만 내려주겠거니 하고 별로 신경을 안 쓰고 계셨나요? 해당 포스트에서는 Spring Boot Actuaor가 제공해주는 헬스 체크는 어떤 식으로 서버의 상태를 점검하는지, 어떤 부분을 주의하며 사용해야하는지 알아봅니다."
+  },
+  {
+    "id": "21",
+    "imageUrl": "https://static.toss.im/assets/toss-tech/node%20js-security.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "Node.js url.parse() 취약점 컨트리뷰션",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20230512",
+    "body": "토스 보안기술팀은 안전한 금융 서비스를 제공하기 위한 연구를 수행하고 있어요.\n많은 서비스에서 사용되고 있는 Node.js의 취약점을 분석하고 안전하게 패치될 수 있도록 기여했던 과정을 소개드려요."
+  },
+  {
+    "id": "22",
+    "imageUrl": "https://static.toss.im/assets/toss-tech/frontend-diving-club.jpg",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "놀러오세요! 프론트엔드 다이빙 클럽",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20230721",
+    "body": "프론트엔드에 관한 깊은 이야기를 나눌 수 있는 오프라인 커뮤니티, 프론트엔드 다이빙 클럽을 소개합니다."
+  },
+  {
+    "id": "23",
+    "imageUrl": "https://static.toss.im/assets/toss-tech/slash_juneseokbeomgun_thumb.png",
+    "emojiUrl": "https://static.toss.im/2d-emojis/png/4x/u263A.png",
+    "title": "레고처럼 조립하는 토스 앱",
+    "editorName": "김토스",
+    "shortDescription": "Frontend Developer",
+    "createdDate": "20230822",
+    "body": "수많은 서비스를 담고 있는 대규모 iOS 앱에 어울리는 아키텍처는 무엇일까요?\n프로젝트 간의 의존성과 모듈 간의 결합도를 낮춰, 더 효율적인 서비스 개발, 관리를 이뤄낸 과정을 소개합니다. "
+  }
+]
