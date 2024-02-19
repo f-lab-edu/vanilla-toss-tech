@@ -1,10 +1,8 @@
-import { setupServer } from 'msw/node';
-import { handlers } from '@/mocks/articleHandlers.js';
+import { server } from '@/mocks/server';
+import { beforeAll, afterEach, afterAll } from 'vitest';
 import dotenv from 'dotenv';
 
 dotenv.config({ path: './.env.local' });
-
-const server = setupServer(...handlers);
 
 beforeAll(() => {
   // Start the interception.
