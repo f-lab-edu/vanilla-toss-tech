@@ -3,6 +3,7 @@ import style from '@/styles/components/main.module.css';
 import { fetchData } from '@/apis/index.js';
 import { navigate } from '@/navigate.js';
 import { formatDate } from '@/utils';
+import { ARTICLE_TYPE, ARTICLE_TYPE_TO_KR } from '@/constants';
 
 export default class Main extends Component {
   constructor() {
@@ -12,12 +13,16 @@ export default class Main extends Component {
   setup() {
     this.$state = {
       articles: {},
+      articleType:
+        location.pathname === '/design'
+          ? ARTICLE_TYPE.DESIGN
+          : ARTICLE_TYPE.TECH,
     };
   }
 
   template() {
     return `
-      <span class="${style.main__subject}">개발</span>
+      <span class="${style.main__subject}">${ARTICLE_TYPE_TO_KR[this.$state.articleType]}</span>
       <ul class="${style.main__list}"></ul>
       `;
   }
@@ -55,7 +60,9 @@ export default class Main extends Component {
 
   async fetchArticles() {
     try {
-      const result = await fetchData('/articles');
+      const result = await fetchData(
+        `/articles?articleType=${this.$state.articleType}`,
+      );
       this.$state.articles = result.articles;
     } catch (e) {
       console.error('error from main.js : ', e);
