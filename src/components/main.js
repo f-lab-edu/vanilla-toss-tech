@@ -4,6 +4,13 @@ import { fetchData } from '@/apis/index.js';
 import { navigate } from '@/navigate.js';
 import { formatDate } from '@/utils';
 
+function handleClickItem(e) {
+  e.preventDefault();
+  const targetElement = e.target.closest('li');
+  const articleId = targetElement.id;
+  navigate(`/article/${articleId}`);
+}
+
 export default class Main extends Component {
   constructor() {
     super(document.querySelector('main'));
@@ -63,9 +70,9 @@ export default class Main extends Component {
   }
 
   setEvent() {
-    this.addEvent('click', 'li > a', (e) => {
-      const targetElement = e.target.closest('li');
+    this.addEvent('click', 'ul', (e) => {
       e.preventDefault();
+      const targetElement = e.target.closest('li');
       const articleId = targetElement.id;
       navigate(`/article/${articleId}`);
     });

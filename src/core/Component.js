@@ -5,7 +5,10 @@ export default class Component {
 
   $state;
 
+  $attacthedEventListeners;
+
   constructor($target, $props) {
+    this.$attacthedEventListeners = [];
     this.$target = $target;
     this.$props = $props;
     this.setup();
@@ -50,6 +53,15 @@ export default class Component {
     // 추상화를 위한 메서드
   }
 
+  removeEvent() {
+    for (let { eventType, listener } of this.$attacthedEventListeners) {
+      this.$target.removeEventListener(eventType, listener);
+    }
+    this.$attacthedEventListeners = [];
+  }
+  unmounted() {
+    this.removeEvent();
+  }
   /**
    * 상태 변경 후 렌더링
    * @param {*} newState
@@ -66,9 +78,10 @@ export default class Component {
    * @param {*} callback
    */
   addEvent(eventType, selector, callback) {
-    this.$target.addEventListener(eventType, (event) => {
-      if (!event.target.closest(selector)) return false;
-      callback(event);
-    });
+    const listener = (e) => {
+      if (e.target.closest(selector)) callback(e);
+    };
+    this.$target.addEventListener(eventType, listener);
+    this.$attacthedEventListeners.push({ eventType, listener });
   }
 }

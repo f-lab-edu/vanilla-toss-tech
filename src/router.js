@@ -11,6 +11,8 @@ const routes = [
 ];
 
 export default class Router extends Component {
+  currentComponent = null;
+
   findMatchedRoute() {
     return routes.find((route) => route.path.test(location.pathname));
   }
@@ -21,7 +23,10 @@ export default class Router extends Component {
    */
   navigate() {
     const containerPage = this.findMatchedRoute()?.element || NotFound;
-    new containerPage(this.$container);
+    if (this.currentComponent) {
+      this.currentComponent.unmounted();
+    }
+    this.currentComponent = new containerPage(this.$container);
   }
 
   /**
