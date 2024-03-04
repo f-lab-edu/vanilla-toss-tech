@@ -30,17 +30,18 @@ export default class Header extends Component {
   }
 
   setEvent() {
-    this.addEvent('click', 'li > button', () => {
-      this.goRecruit();
-    });
-
     this.addEvent('click', 'nav', (e) => {
-      const target = e.target.closest('a');
-      if (!(target instanceof HTMLAnchorElement)) return;
-
       e.preventDefault();
-      const targetURL = target.href.replace(import.meta.env.VITE_BASEURL, '');
-      navigate(targetURL);
+      const target = e.target.closest('li').children[0];
+      if (!target) return;
+
+      const actionTargetTag = target.tagName.toLowerCase();
+      if (actionTargetTag === 'button') {
+        this.goRecruit();
+      } else if (actionTargetTag === 'a') {
+        const targetURL = target.href.replace(import.meta.env.VITE_BASEURL, '');
+        navigate(targetURL);
+      }
     });
   }
 
