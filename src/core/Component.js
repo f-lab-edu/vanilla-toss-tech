@@ -5,9 +5,12 @@ export default class Component {
 
   $state;
 
+  $attachedEventListeners;
+
   constructor($target, $props) {
     this.$target = $target;
     this.$props = $props;
+    this.$attachedEventListeners = [];
     this.setup();
     this.setEvent();
     this.render();
@@ -25,6 +28,13 @@ export default class Component {
    */
   mounted() {
     // 추상화를 위한 메서드
+  }
+
+  /**
+   * 컴포넌트가 언마운트 되었을 때의 설정
+   */
+  unmounted() {
+    this.removeEvent();
   }
 
   /**
@@ -66,9 +76,22 @@ export default class Component {
    * @param {*} callback
    */
   addEvent(eventType, selector, callback) {
-    this.$target.addEventListener(eventType, (event) => {
+    const listener = (event) => {
       if (!event.target.closest(selector)) return false;
       callback(event);
-    });
+    };
+    this.$target.addEventListener(eventType, listener);
+    this.$attachedEventListeners.push({ eventType, listener });
+  }
+
+  /**
+   * 이벤트 리스너 제거
+   */
+  removeEvent() {
+    for (let { eventType, listener } of this.$attachedEventListeners) {
+      this.$target.removeEventListener(eventType, listener);
+    }
+
+    this.$attachedEventListeners = [];
   }
 }

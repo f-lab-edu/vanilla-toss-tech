@@ -63,9 +63,9 @@ export default class Main extends Component {
   }
 
   setEvent() {
-    this.addEvent('click', 'li > a', (e) => {
-      const targetElement = e.target.closest('li');
+    this.addEvent('click', 'ul', (e) => {
       e.preventDefault();
+      const targetElement = e.target.closest('li');
       const articleId = targetElement.id;
       navigate(`/article/${articleId}`);
     });
